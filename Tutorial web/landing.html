@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: purple;
+        }
+
+        hr {
+            margin-top: 50px;
+            border: dotted palevioletred;
+            border-top: 0px;
+            border-width: 5px;
+        }
+
+        h1 {
+           font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+           font-size: 3rem;
+           text-transform: uppercase;
+        }
+        
+        #container {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+
+        .inner-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: wheat;
+            flex-wrap: wrap;
+        }
+
+        .inner-container > * {
+            flex-shrink: 1;
+        }
+
+        img {
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            border: 5px dotted plum;
+        }
+
+        .about {
+            font-size: 2.4em;
+            line-height: 2;
+            color: plum;
+        }
+
+        .name-hubby {
+            color: lightcoral;
+            text-align: center;
+            font-style: italic;
+            font-weight: bolder;
+        }
+
+        .routes {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 10vh;
+        }
+
+        .routes > * {
+            flex-shrink: 1;
+            border: 5pt ridge plum;
+            min-width: 200px;
+            text-align: center;
+            background-color: brown;
+            border-radius: 15%;
+        }
+
+        a {
+            color: orange;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: deeppink;
+        }
+
+        .foot {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            height: 40vh;
+        }
+
+        footer {
+            font-size: 0.7rem;
+            color: wheat;
+            clear: both;
+        }
+
+        @media(max-width: 600px) {
+            .routes {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            height: 15vh;
+            justify-content: space-evenly;
+        }
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="inner-container">
+            <div id="sk"><img src="./assets/images/sk.jpeg" height="200px" alt="sk"></div>
+            <div class="about">
+                <p>My aim is to make web development simple as possible. <br>
+                    This is standard and enough to get you started and <br>
+                    it is adequate enough to get you through the roughness <br>
+                    and toughness of programming. #Read little, practice more. <br>
+                </p>
+            </div>
+            <div class="name-hubby">
+                <h1>Olatunji</h1>
+                <p>Programming is my hobby</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="routes">
+        <div><a href="public/RoadMap.html">HTML ROUTE</a></div>
+        <div><a href="public/css.html">CSS ROUTE</a></div>
+       <div> <a href="public/">JAVASCRIPT ROUTE</a></div>
+    </div>
+    <div class="foot">
+        <footer><p>Copyright Leebartea © 2025</p></footer>
+    </div>
+</body>
+</html>
+

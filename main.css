@@ -1,0 +1,200 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #222831;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+/* nav bar */
+
+.nav-container > * {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.nav-container ul li a {
+    text-decoration: none;
+    color: #EEEEEE;
+}
+
+.nav-container ul li a:hover {
+    color: lightgrey;
+}
+
+a {
+    color: #EEEEEE;
+}
+
+a:hover {
+    color: lightgray;
+}
+
+/* Hero-Section */
+
+#main-hero {
+    display: flex;
+    justify-content: center;
+    background-color: #222831;
+    color: white;
+}
+
+.Hero {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    max-width: 50vh;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 2px dashed lightslategrey;
+}
+
+/* Resume-Section */
+
+
+#main-resume {
+    background-color: #393E46;
+    padding: 90px 30px;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+.resume {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    color: white;
+    line-height: 30px;
+    gap: 10px;
+    text-align: center;
+    background-color: #222831;
+    border-radius: 5%;
+    min-width: 200px;
+}
+
+.exp {
+    border: 2px dashed;
+    border-radius: 15px;
+    
+}
+
+.edu {
+    border: 2px dashed;
+    border-radius: 15px;
+}
+
+
+#main-resume {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* skills-section */
+
+.sk {
+    border: 2px dashed;
+    border-radius: 15px;
+}
+
+/* About me-section */
+
+#about-me {
+    display: flex;
+    background-color: #00ADB5;
+    justify-content: center;
+    color: white;
+    padding: 50px;
+}
+
+.abt {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr;
+    max-width: 450px;
+}
+
+.abt > p {
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+
+/* Contact-me */
+
+#contact-me {
+    background-color: #EEEEEE;
+    text-align: center;
+    color: grey;
+    font-style: italic;
+    margin-top: -22px;
+}
+
+.cnt {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@media(max-width: 720px) {
+    .resume {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2fr;
+        color: white;
+        line-height: 40px;
+        gap: 10px;
+        text-align: center;
+        background-color: #222831;
+        border-radius: 5%;
+        max-width: 90%;
+        font-size: large;
+    }
+
+    .nav-container > * {
+        display: flex;
+        justify-content: flex-end;
+        gap: 15px;
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 480px) {
+    .resume {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr;
+        color: white;
+        line-height: 50px;
+        text-align: center;
+        background-color: #222831;
+        border-radius: 5%;
+        max-width: 100%;
+        font-size: larger;
+    }
+
+    .nav-container > * {
+        display: flex;
+        justify-content: flex-end;
+        gap: 15px;
+        flex-direction: column;
+    }
+}
+
+

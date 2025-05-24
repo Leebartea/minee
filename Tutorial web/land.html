@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            background-color: gray;
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.5fr 2fr 0.5fr;
+            gap: 10pt;
+            color: gainsboro;
+            height: 100vh;
+            min-width: 480px;
+        }
+
+        .whole-flex {
+            display: flex;
+            gap: 10pt;
+        }
+
+        .nav {
+            display: flex;
+            flex-direction: column;
+            gap: 2pt;
+            justify-content: center;
+            height: 6vh;
+        }
+
+        .nav > * {
+            width: 20px;
+            height: 2px;
+            background-color: ghostwhite;
+        }
+
+        .ach {
+            display: flex;
+            gap: 30px;
+            width: 100%;
+            justify-content: flex-end;
+        }
+
+        .body-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .footer-section {
+            display: flex;
+            justify-content: center;
+            font-style: italic;
+        }
+
+        img {
+            border-radius: 50%;
+            width: 50pt;
+            height: 50pt;
+        }
+
+        @media(max-width: 720px) {
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="whole-flex">
+            <div class="nav">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="ach">
+                <p>About</p>
+                <p>Contact</p>
+                <p>Home</p>
+            </div>
+        </div>
+        <div class="body-section">
+            <div><img src="./assets/images/sk.jpeg" alt="sk"></div>
+            <div><p>Fav Quote</p></div>
+        </div>
+        <div class="footer-section">
+            <div>Copyright @ Leebartea</div>
+        </div>
+    </div>
+</body>
+</html>

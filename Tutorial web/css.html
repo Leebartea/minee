@@ -1,0 +1,2417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Topic</title>
+    <link rel="stylesheet" href="./main.css" />
+<body>
+   <div class="container">
+    <div class="sections"> 
+        <h1 id="title">Basic Css To Advance</h1>
+            <h3><li>Add Css To Files</h3>
+                <ul>
+                    <li>Inline Css
+                        <div class="code-parents">
+                            <div class="code">
+                                <ul>
+                                    &lt;p style="color: red"&gt;Inline style&lt;/p&gt
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>Internal Css
+                        <div class="code-parents">
+                            <div class="code">
+                                <ul>
+                                    &lt;head&gt;<br />&lt;style&gt;<br />p {color: "red"}<br />&lt;/style&gt;<br />&lt;/head&gt
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>External Css
+                       <div class="code-parents">
+                        <div class="code">
+                            <ul>
+                                &lt;head&gt;<br />&lt;link rel="stylesheet" href="./styles.css"&gt;<br />&lt;/head&gt;
+                            </ul>
+                        </div>
+                       </div>
+                    </li>
+                </ul>
+            </li>
+    </div>
+
+    <div class="sections">
+        <h3><li>Css Selectors</h3>
+            <ul>
+                <li>Element Selectors
+                    <div class="code-parents">
+                        <div class="code">
+                            <ul>
+                                h1 {color: red;}
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>Class Selectors
+                    <div class="code-parents">
+                        <div class="code">
+                            <ul>
+                                .main(Start with dot then name of the class)
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>Id Selectors
+                    <div class="code-parents">
+                        <div class="code">
+                            <ul>
+                                #main(Start with Ash sign then the id name follow)
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>Attribute Selectors
+                    <div class="code-parents">
+                        <div class="code">
+                            <ul>
+                                p[draggable="true"](versatile in distinguishing element)
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>Universal Selectors
+                    <div class="code-parents">
+                        <div class="code">
+                            <ul>* {color: blue} This will be applicable to whole content</ul>
+                        </div>
+                    </div>
+                </li>
+                <li>Pseudo class selector
+                    <div class="code-parents">
+                        <div class="code">
+                            <ul>
+                                a:hover(Applicable when hovering)
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </li>
+    </div>
+
+    <div class="sections">
+            <h3><li>Css Colors</h3></h3>
+                <ul>
+                    <li>"Named-color" on <a " href="https://developer.mozilla.org/en-US/docs/Web/CSS/named-color">named-color</a>
+                        <ul>
+                            <li>Hex code(#FFFFFF) or the name(white)</li>
+                        </ul>
+                    </li>
+                    <li>ColorHunt
+                        <ul>
+                            <li><a " href="https://colorhunt.co/">ColorHunt</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+    </div>
+    <div class="sections">
+            <h3><li>Font Size Properties</h3>
+                <ul>
+                    <li>px(pixel)
+                        <ul>
+                            <li>1/96 of an inch</li>
+                        </ul>
+                    </li>
+                    <li>pt(point)
+                        <ul>
+                            <li>1/72 of an inch</li>
+                        </ul>
+                    </li>
+                    <li>em
+                        <ul>
+                            <li>share same size with a parent
+                                <div class="code-parents">
+                                    <div class="code">
+                                        <ul>
+                                            <li>&lt;footer&gt;<br />&lt; id="em" p&gt;demo&lt/p&gt;<br>&lt;/footer&gt;
+                                                <ul>
+                                                    <li>footer {font-size: 20px} p {font-size: 2em} => 2 * 20px= 40px</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>rem
+                        <ul>
+                            <li>Share same font size with root element(html)
+                                <div class="code-parents">
+                                    <div class="code">
+                                        <ul>
+                                            <li>&lt;html&gt;<br />&lt;footer&gt;<br />&lt; id="rem" p&gt;demo&lt/p&gt;<br>&lt;/footer&gt<br />&lt;/html&gt;
+                                                <ul>
+                                                    <li>html {font-size: 10pt} #rem {font-size: 3rem} => 3*10pt = 30pt</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+     </div>
+        
+    <div class="sections">
+            <h3><li>Font Family Properties</h3>
+                <ul>
+                    <li>Using <a href="https://fonts.google.com/"> google fonts</a>
+                        <ul>
+                            <li>Embedded the link in the head section.</li>
+                        </ul>
+                    </li>
+                    <li>Manually added
+                        <ul>
+                            <li>Locally added without any external links.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+    </div>
+       
+    <div class="sections">
+            <h3><li>Font Weight Properties</h3>
+                <ul>
+                    <li>Can be of number(100-900)
+                        <ul>
+                            <li>100 denotes light</li>
+                            <li>900 denotes bold</li>
+                        </ul>
+                    </li>
+                    <li>Can be of keywords(normal, bold, light, bolder, lighter e.t.c)
+                        <ul>
+                            <li>lighter and bolder[They are relative to parent(lighter => -100, bolder => +100)]</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+    </div>
+     
+    <div class="sections">
+            <h3><li>Text Align</h3>
+                <div class="code-parents">
+                    <div class="code">
+                        <ul>
+                            <li>h1 {text-align: left}(right, center e.t.c)</li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+    </div>
+       
+    <div class="sections">
+        <h3><li>Css Inspection</h3>
+            <ul>
+                <li>Chrome Dev Tools
+                    <ul>
+                        <li>Inspection
+                            <ul>
+                                <li>Arrow icon
+                                    <ul>
+                                        <li>Precision selection</li>
+                                    </ul>
+                                </li>
+                                <li>Styles
+                                    <ul>
+                                        <li>Pops up all css styles</li>
+                                    </ul>
+                                </li>
+                                <li>Computed
+                                    <ul>
+                                        <li>Pops up summary of all css styles</li>
+                                    </ul>
+                                </li>
+                                <li>Vertical dot
+                                    <ul>
+                                        <li>Pops up more tools => css overview
+                                            <ul>
+                                                <li>General Overview of all css styles</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </div>
+       
+    <div class="sections">
+            <h3><li>Css Box Model</h3>
+                <ul>
+                    <p>
+                        Note: Every html element should be treated as a box on screen.<br />
+                        setting elements height and width makes it obvious.<br /> 
+                        We can also manually contain element in box 
+                        using Div(Content Division Element)
+                    </p>
+                    <li>Margin
+                        <ul>
+                            <li>This is applicable to outside the border.<br />
+                                It separates the element from other elements on the page,<br />
+                                 controlling the distance between neighboring boxes
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Border
+                        <ul>
+                            <li>This is applicable to thickness of element.<br />
+                                Border is the line that wraps around the padding and content.<br />
+                                It visually separates the element from its surroundings.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Padding
+                        <ul>
+                            <li>This is the space between an element's content and its border.<br />
+                                It creates internal spacing, pushing the border away from the content
+                            </li>
+                        </ul>
+                    </li>
+                    <ul><h4>Applications</h4>
+                        <div class="code-parents">
+                            <div class="code">
+                                <li><p>#sample {border: 10px solid black}</p>
+                                    <ul>
+                                        <li>This means 10px to all 4 sides and <br /> 
+                                            make it solid and of black color</li>
+                                    </ul>
+                                </li>
+                                <li>#sample2 {border: solid black}
+                                    <ul>
+                                        <li>Make border of black and solid for visual</li>
+                                    </ul>
+                                </li>
+                                <li>#sample3 {border-width: 10px 2px 4px 6px}
+                                    <ul>
+                                        <li>Apply 10px to top, 2px to right,<br /> 
+                                            4px to bottom and 6px to left</li>
+                                    </ul>
+                                </li>
+                                <li>#sample4 {border-width: 12px 8px}
+                                    <ul>
+                                        <li>Apply 12px to both top and bottom and <br /> 
+                                            8px to both right and left</li>
+                                    </ul>
+                                </li>
+                            </div>
+                        </div>
+                    </ul>
+                </ul>
+            </li>
+    </div>
+        
+    <div class="sections">
+            <h3><li>Css Cascade</h3>
+                <ol>
+                    <p>This is order of importance in which css is being apply to html.</p>
+                    <li value="4">Position(This give priority to the last applied style)
+                        <ul>
+                            <div class="code-parents">
+                                <div class="code">
+                                    <li>p {color: red;<br />
+                                        color: blue;
+                                     }
+                                     <p>[blue will override red because of the position.]</p>
+                                 </li>
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                    <li value="3">Specificity(This is rank next to the position)
+                        <ul>
+                            <div class="code-parents">
+                                <div class="code">
+                                    <li>li {color: coral}</li>
+                                    <li>.first-class {color: red;}</li>
+                                    <li>li[draggable] {color: purple;}</li>
+                                    <li>#first-id {color: green}</li>
+                                </div>
+                            </div>
+                            <p>If all these selectors are all apply to an element tag(li)<br />
+                               The "id selector"(#first-id) will be apply because it<br /> 
+                               will override the other selectors Because it is the most<br />
+                               specific selector. follow by "attribute selector",<br />
+                               "class selector", and "element selector".<br />
+                               <b>Note: Though some believe "attribute selector and<br />
+                                 class selector" are on the same level. But in most cases<br /> 
+                                 it do override class selector.</b> 
+                            </p>
+                        </ul>
+                    </li>
+                    <li value="2">Type(This is next after Specificity)
+                        <ol>
+                            <div class="code-parents">
+                                <div class="code">
+                                    <li value="3">&lt;link rel="stylesheet" href=""></li>
+                                    <li value="2">&lt;style&gt;&lt/style&gt</li>
+                                    <li value="1">&lt;h1 style=""&gt;hey&lt;/h1&gt;</li>
+                                </div>
+                            </div>
+                            <p>External link is the last to be consider as it pave way for<br />
+                                other type. internal is next to External css. The inline<br />
+                                is the first and will override the rest type of css.
+                            </p>
+                        </ol>
+                    </li>
+                    <li value="1">importance(This is in the first level in the Cascade steps.)
+                        <ul>
+                            <div class="code-parents">
+                                <div class="code">
+                                    <li>p {color: red;}<br /></li>
+                                    <li>p {color: green !important;}</li>
+                                </div>
+                            </div>
+                            <p>In this instance, green will be apply because<br />
+                                of the important notation. it will override
+                                any<br /> other styling available be it inline, id and so on.
+                            </p>
+                        </ul>
+                    </li>
+                </ol>
+            </li>
+    </div>
+       
+    <div class="sections">
+            <h3><li>Css Combining Selectors</h3>
+                <ul>
+                    <p>This is the combining multiple css selectors in order to target specific element in html</p>
+                    <li>Grouping
+                        <ul>
+                            <p>This is done using comma to separate element</p>
+                            <div class="code-parents">
+                                <div class="code">
+                                    <li>selector1, selector2 {color: coral;}</li>
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                    <li>Parent child Selectors
+                        <ul>
+                            <p>Using ">" to select child. This is one level deep.</p>
+                            <div class="code-parents">
+                                <div class="code">
+                                    <li>selector1 > selector2 {color: gold;}</li>
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                    <li>Descendant Combination
+                        <ul>
+                            <p>This comprises ancestors and the descendant <br>
+                                with a space separating them. This means our <br> 
+                                ancestors will apply the style to the descendant <br> 
+                                as long as it has ancestors that matches the selector. <br> 
+                                We can have many level deep. 
+                            </p>
+                            <div class="code-parents">
+                                <div class="code">
+                                    <li>selector selector {font-size: 5rem;}</li>
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                    <li>Chaining Selectors
+                        <ul>
+                            <p>This apply style to where all the selectors are true.<br>
+                                This does not have space between them.<br> eg <div class="code-parents">
+                                    <div class="code">
+                                        &ltp id="paragraph" class="bold dope">Hey&lt;/p> =>
+                                        p#paragraph.bold.dope
+                                    </div>
+                                </div> <br> [Useful to when we have same style on element across code]. <br>making element more specific.<br>
+                                In the case of element involvement(h1, p). <br>We should always start with them for clarity.
+                             </p>
+    
+                            <div class="code-parents">
+                                <div class="code">
+                                    <li>selector1selector2 {color: blue;}</li>
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                    <li>Combining Combiners
+                        <ul>
+                            <p>This is the combination of different combine selectors <br>
+                            This involves ancestors space then chaining method <br>
+                            or group method to combine different combination.
+                            </p>
+                            <div class="code-parents">
+                                <div class="code">
+                                    <li>selector selector2selector3 {color: red;}</li>
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+    </div>
+           
+    <div class="sections">
+                <h3><li>Css Positioning</h3>
+                    <ul>
+                        <p>This is a way we can place element or object using css</p>
+                        <li>Static Position
+                            <ul>
+                                <p>This is the default position of element.<br>
+                                    Properties like Top, right e.t.c <br> 
+                                    are not applicable to this position
+                                </p>
+                            </ul>
+                        </li>
+                        <li>Relative Position
+                            <ul>
+                                <p>This unlike static position is relative <br>
+                                    to its position. Properties like top, <br>
+                                    right e.t.c are applicable to this
+                                </p>
+                               <div class="code-parents">
+                                <div class="code">
+                                    <li>
+                                        .relative { <br>
+                                            position: relative; <br>
+                                            top: 20px; <br>
+                                            left: 15px <br>
+                                        }
+                                    </li>
+                                </div>
+                               </div>
+                               <p>Position in flow is intact. The element still occupy 
+                                its default alloted position in the document. The browser 
+                                apply the code by taking the item 20px down and 15px right 
+                                from where it would have been. Other elements remain in their 
+                                position. Even after shifting the element, its default spot 
+                                remain intact, so siblings and parents act as if it's still 
+                                in the default position. Adjust me without affecting others.
+                               </p>
+                            </ul>
+                        </li>
+                        <li>Absolute Position
+                            <ul>
+                                <p>This affect the flow of html element. <br>
+                                    This position is relative to its Parent <br>
+                                    element. Properties like top, left e.t.c <br> 
+                                    are applicable to it. It can as well be <br>
+                                    control by z-index because it can appear <br>
+                                    on top of other element.
+                                </p>
+                                <p>The element we assign absolute position will look up the 
+                                    DOM tree for the first ancestor that has position: relative,
+                                    absolute, fixed, or sticky. That ancestor's padding box becomes 
+                                    its positioning reference. If no ancestor is positioned, the 
+                                    containing block defaults to the initial containing block which 
+                                    is most time the browser viewport.
+                                </p>
+                                <div class="code-parents">
+                                    <div class="code">
+                                       <li>
+                                        .example-parents { <br>
+                                            position: relative;   /* ✔ makes this the containing block */ <br>
+                                            width: 300px; height: 200px; <br>
+                                            background: #f9f9f9; <br>
+                                        } <br>
+
+                                        .abs-child { <br>
+                                            position: absolute; <br>
+                                            bottom: 10px; right: 15px; <br>
+                                            width: 50px; height: 50px; <br>
+                                            background: coral; <br>
+                                          } <br>
+                                          &lt;div class="example-parents”&gt; <br>
+                                          &lt;div class="abs-child">Badge&lt;/div&gt; <br>
+                                          &lt;/div&gt;
+                                       </li>
+                                    </div>
+                                </div>
+                                <p>Here, the badge sits 10 px above the container’s bottom edge and 15 px from its right edge.</p>
+                            </ul>
+                        </li>
+                        <li>Fixed Position
+                            <ul>
+                                <p>This like absolute position also affect flow <br>
+                                    of an html. It is fixed unlike other position. <br>
+                                    Properties like top, right e.t.c are applicable <br>
+                                    to it as well. This make element to remain fix <br>
+                                    when scrolling. 
+                                </p>
+                            </ul>
+                        </li>
+                        <li>Sticky Position
+                            <ul>
+                                <p>Similar to fixed position</p>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+    </div>
+           
+    <div class="sections">
+        <h3><li>Css Display</h3>
+            <ul>
+                <p>This is away we can align our element on web page <br>
+                    There are many types of display but we will be touching <br>
+                    only 4 types here. Note: Span element can be use to put <br>
+                    content within element because it's natural display property <br>
+                    is "Inline".Visualize all types of display here => <a href="https://appbrewery.github.io/css-display/">Github</a> 
+                </p>
+                <li>Block Display
+                    <ul>
+                        <p>This is the default display of all element. It <br>
+                            means, element take full width of the entire <br>
+                            line contain. It force other element to appear <br>
+                            next line. It height and width can be change
+                        </p>
+                    </ul>
+                </li>
+                <li>Inline Display
+                    <ul>
+                        <p>Contents is the determinant of this type. It uses <br>
+                            the height and width of content to determine its <br>
+                            sizes. Is height and width cannot be change. Other <br>
+                            element can be place beside it as it doesn't take <br>
+                            entire width as block display. Its height and width <br>
+                            can't be change. It's fix by the demand of its contents.
+                        </p>
+                    </ul>
+                </li>
+                <li>Inline-Block Display
+                    <ul>
+                        <p>This comprises both the "Inline" and The "Block" <br>
+                            display abilities. It takes full width and can <br>
+                            extend to other line if needed. Both width and <br>
+                            height can be change. It accept element to be <br>
+                            place side by side.
+                        </p>
+                    </ul>
+                </li>
+                <li>None Display
+                    <ul>
+                        <p>As the name implies, it makes element disappear <br>
+                            useful for element we don't want to display. <br>
+                            Useful to make element of TO-DO list to disappear
+                        </p>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </div>
+            
+            <div class="sections">
+                <h3><li>Css Float</h3>
+                    <ul>
+                        <p>
+                            This is best use on image to just wrap text around <br> 
+                            it. It can get more complicated to layout element on <br>
+                            screen and there are more advance tools like Grid and <br>
+                            Flexbox to use instead. Its properties involves: 'left <br>
+                            and right'. Also 'Clear' can be use to separate other <br>
+                            element from interfering. 'Clear' involve 'Both' or can be <br>
+                            use on each direction(Right or Left)
+                        </p>
+                        <li>float: left;</li>
+                        <li>float: right;</li>
+                        <li>clear: both;</li>
+                        <li>clear: right;</li>
+                        <li>clear: left;</li>
+                    </ul>
+                </li>
+            </div>
+
+            <div class="sections">
+                <h3><li>Css Responsiveness</h3>
+                    <ul>
+                        <p>This is a way we make our website responsive <br>
+                            to different screen sizes.
+                        </p>
+                        <li>Media Query
+                            <ul>
+                                <p>This is basics of responsiveness in vanilla css before <br>
+                                    introduction of flex and grid.
+                                    this involves using: <li>
+                                        <div class="code-parents">
+                                            <div class="code">
+                                                @media(max-width: 720px) { <br>
+                                                    .body { <br>
+                                                        background-color: green; <br>
+                                                    } <br>
+                                                }
+                                            </div>
+                                        </div>
+                                    </li>
+                                    Which denotes: When screen size is at 720px or lesser,
+                                    adjust to new settings. This target smaller screen.
+                                </p>
+                            </ul>
+                        </li>
+                        <li>Grid
+                            <ul>
+                                <p>Grid allow a 2 or 3 dimensional layout of
+                                    website.
+                                    This involves setting main div display to grid.
+                                    e.g
+                                            <div class="code-parents">
+                                                <div class="code">
+                                                    <li>
+                                                        .main { <br>
+                                                            display: grid;  <br>
+                                                            grid-template-columns: 1fr 1fr; <br>
+                                                            grid-template-rows: 100px 150px 150px <br>
+                                                            gap: 20px <br>
+                                                        } <br>
+                        
+                                                        .first { <br>
+                                                            grid-column: span 2; <br>
+                                                        } <br>
+                        
+                                                        .card { <br>
+                                                            background-color: red; <br>
+                                                        } <br>
+                                                    </li>
+                                                </div>
+                                            </div>
+                                    which simply means, create 2-columns and 3-rows, <br>
+                                    make the first div occupy two columns. So the first <br>
+                                    div will occupy two columns and will be 100px. The rest <br>
+                                    will occupy one column and will be 150px each with a gap <br>
+                                    of 20px.
+                                </p>
+                            </ul>
+                        </li>
+                        <li>Flexbox
+                            <ul>
+                                <p>Flex allow 1 dimensional layout of website. 
+                                    <div class="code-parents">
+                                        <div class="code">
+                                            <li>
+                                                .container { <br>
+                                                    display: flex; <br>
+                                                    border: 20px solid red; <br>
+                                                } <br>
+                
+                                                .card { <br>
+                                                    background: brown; <br>
+                                                    border: 20px solid seagreen;  <br>
+                                                    height: 150px; <br>
+                                                    flex: 1 <br>
+                                                } <br>
+                
+                                                .first { <br>
+                                                    flex 2 <br>
+                                                } <br>
+                
+                                                .second { <br>
+                                                    flex: 0.5; <br>
+                                                }
+                                            </li>
+                                        </div>
+                                    </div>
+                                    This simply means: We set the main div display to flex
+                                    then we add border, we set each div to brown then its border
+                                    to seagreen, we set the height and we make it to 1 ratio.
+                                    we set first div to be twice the size of default which is 1.
+                                    we set second div to be half of the default div. So with the
+                                    ratio as width, it makes it responsive.
+                                </p>
+                            </ul>
+                        </li>
+                        <li>Frameworks
+                            <ul>
+                                <p>This process includes adding CDN links to our html 
+                                     using bootstraps as example: This goes to our codes
+                                     as inlines.
+                                     <div class="code-parents">
+                                        <div class="code">
+                                            <li>
+                                                &lt;h1>Bootstrap Framework&lt/h1&gt; <br>
+                                                &lt;div class="container"> <br>
+                                                    &lt;div class="row"&gt; <br>
+                                                    &lt;div class="card col-6"&gt; <br>
+                                                        Card <br>
+                                                    &lt;/div&gt; <br>
+                                                    &lt;div class="card col-2"&gt; <br>
+                                                        Card <br>
+                                                    &lt;/div&gt; <br>
+                                                    &lt;div class="card col-4"&gt; <br>
+                                                        Card <br>
+                                                    &lt;/div&gt; <br>
+                                                    &lt;/div&gt; <br>
+                                                &lt;/div&gt; <br>
+                                            </li>
+                                        </div>
+                                     </div>
+                                    With this, we are simply telling how website how to be 
+                                    responsive according to different screen sizes. In bootstrap,
+                                    screen is divided to 12 unit. So with our example, col-6 means
+                                    occupy 6 unit each in the 12 units sections. col-4 and col-2 
+                                    and so on.
+                                </p>
+                                <li>Tailwind</li>
+                                <li>Bootstraps</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </div>
+
+            <div class="sections">
+                <h3><li>Responsiveness In Details</h3>
+                    <ul>
+                        <li>Media Query
+                            <ul>
+                                <p>Previously, we discuss about max-width.
+                                    In media query, we also have min-width.
+                                    for example: <br>
+                                    <div class="code-parents">
+                                        <div>
+                                            <li>@media(min-width:720px){ <br>
+                                                h1 {font-size: 2rem} <br>
+                                                } <br>
+                                            </li>
+                                        </div>
+                                    </div>
+                                    This means, when the screen size is at 720px, <br>
+                                    that is minimum of 720px and above. Increase the <br>
+                                    font size. This target bigger screen. <br>
+                                </p>
+                                <h5 style="margin: 0px;">Combining Breakpoint.</h5>
+                                <p>We can combine breakpoint to target specific size eg: <br>
+                                    <div class="code-parents">
+                                        <div class="code">
+                                            <li>@media(min-width:720px) and (max-width: 900px){ <br>
+                                                ... <br>
+                                                } <br>
+                                            </li>
+                                        </div>
+                                    </div>
+                                    This means, we want the effect on screen of range between <br>
+                                    720px and 900px. So anything bigger than 720px and less <br>
+                                    than 900px. <br>
+                                </p>
+                                <p>
+                                    <div class="code-parents">
+                                        <div class="code">
+                                            <li>
+                                                media(max-width:720px) and (min-width: 900px){ <br>
+                                                    ... <br>
+                                                    } <br>
+                                            </li>
+                                        </div>
+                                    </div>
+                                Flipping it around make the interpretation to change. This <br>
+                                means, we want changes below 720px on small screen and on <br>
+                                bigger screen should be greater than 900px and higher. <br>
+                            </p>
+                            <h5 style="margin: 0px;">Device</h5>
+                            <p>We can also see device usage. eg <br> 
+                                <div class="code-parents">
+                                    <div class="code">
+                                        <li>
+                                            @media screen(orientation: landscape) { <br>
+                                                .... <br>
+                                            } <br>
+                                        </li>
+                                    </div>
+                                </div>
+                            We don't have to put 'screen' as it'll be applicable to all screen by default. <br>
+                            Alternative to screen is print. This allow us to use media query to <br>
+                            target only when our website is printed and to give it different layout. <br>
+                            so we can either target screen or print and we don't have to be explicit <br>
+                            by writing both the screen and the print out. <br>
+                        </p>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </div>
+            <div class="sections">
+                    <h3><li>Other Responsive ways</h3>
+                        <p>There are other various positioning in the past
+                            before the introduction of Flex, Grid and Media Query.
+                        </p>
+                        <ul>
+                            <div class="code-parents">
+                                <div class="code">
+                                    <li>Html-table  <br>
+                                        <p>Using html table element[tr and td]</p> <br>
+                                        <ul>
+                                            table { <br>
+                                                width: 100%; <br>
+                                              } <br>
+                                          
+                                              td { <br>
+                                                border: 2px solid gray; <br>
+                                                padding: 20px; <br>
+                                                background-color: aquamarine; <br>
+                                              } <br>
+                                          
+                                              .col1 { <br>
+                                                width: 25%; <br>
+                                              } <br>
+                                          
+                                              .col2 { <br>
+                                                width: 25%; <br>
+                                              } <br>
+                                          
+                                              .col3 { <br>
+                                                width: 40%; <br>
+                                              } <br>
+                                        </ul>
+                                    </li>
+                                </div>
+                            </div> <br>
+                            <div class="code-parents">
+                                <div class="code">
+                                    <li>Inline-block  <br>
+                                        <p>Setting up 3 div's and targeting their classes.
+                                            Then tuning the width till it contain the
+                                            content well enough.
+                                        </p>
+                                        <ul>
+                                            div { <br>
+                                                display: inline-block; <br>
+                                                background-color: blue; <br>
+                                              } <br>
+                                          
+                                              .one { <br>
+                                                width: 25%; <br>
+                                              } <br>
+                                          
+                                              .two { <br>
+                                                width: 25%; <br>
+                                              } <br>
+                                          
+                                              .three { <br>
+                                                width: 40%; <br>
+                                              } <br>
+                                        </ul>
+                                    </li>
+                                </div>
+                            </div> <br>
+                           <div class="code-parents">
+                             <div class="code">
+                                <li>Float
+                                    <p>Similar to how will set-up Inline-block:</p>
+                                    <ul>
+                                        div { <br>
+                                            background-color: coral; <br>
+                                            margin: 10px; <br>
+                                          } <br>
+                                      
+                                          .one { <br>
+                                            float: left; <br>
+                                            width: 25%; <br>
+                                          } <br>
+                                      
+                                          .two { <br>
+                                            width: 25%; <br>
+                                            float: left; <br>
+                                          } <br>
+                                      
+                                          .three { <br>
+                                            float: left; <br>
+                                            width: 40%; <br>
+                                          } <br>
+                                    </ul>
+                                </li>
+                             </div>
+                           </div> <br>
+                            <div class="code-parents">
+                                <div class="code">
+                                    <li>Absolute-Positioning <br>
+                                        <p>Same set-up as float and inline-blocks:</p>
+                                        <ul>
+                                            div { <br>
+                                                position: relative; <br>
+                                                display: inline-block; <br>
+                                                background-color: blueviolet; <br>
+                                              } <br>
+                                          
+                                              .one { <br>
+                                                width: 25%; <br>
+                                                position: absolute; <br>
+                                              } <br>
+                                          
+                                              .two { <br>
+                                                position: absolute; <br>
+                                                left: 27.5%; <br>
+                                                width: 25%; <br>
+                                              } <br>
+                                          
+                                              .three { <br>
+                                                position: absolute; <br>
+                                                left: 53%; <br>
+                                                width: 40%; <br>
+                                              }
+                                        </ul>
+                                    </li>
+                                </div>
+                            </div>
+                        </ul>
+                        <p>All these old method mention above tends to be hard
+                            to get best result using them as it involves lot of 
+                            tweaks and tuning.
+                        </p>
+                    </li>
+            </div>
+            
+            <div class="sections">
+                <h3><li>Flex(One dimensional layout)</h3>
+                    <p>This is easy and neat modern tools. Which is simply
+                        implemented by creating a div that encapsulate the
+                        rest div's. Simple illustration is:
+                    </p>
+                    <ul>
+                        <div class="code-parents">
+                            <div class="code">
+                                <li>
+                                    .container { <br>
+                                        display: flex; <br>
+                                        gap: 10px; <br>
+                                      } <br>
+                                  
+                                      p { <br>
+                                        background-color: darkseagreen; <br>
+                                      }
+                                </li>
+                            </div>
+                        </div>
+                    </ul>
+                    <p>Previously, we learned that div occupy full width while
+                        span is an inline element. p tag is also block element.
+                        img tag is an inline but with flexbox, all of the default
+                        behavior are overlook. And the width of each of these element
+                        inside flexbox will be based on the content size. So it'll 
+                        try and let us have all our content on one line. We can then use
+                        Gap property to separate them. Default setting of a container(div)
+                        is like a block element(100% full width). We can also set it as:
+                        'inline-flex'. Which is similar to the inline we already treated. 
+                        It'll make flexbox occupy the space needed. Which means other things
+                        can also go and occupy in that same line. So we can either set the
+                        main container(div) as either 'flex' or 'inline-flex'.
+                    </p>
+                    <ul>
+                        <li style="list-style:circle;">Flex direction
+                            <ul>
+                                <p>The default settings of flex is row. We can also set
+                                    flex direction property to 'column.' When at default
+                                    that is 'row'. the main axis tends to be on an horizontal
+                                    line while the cross-axis will be on vertical line.
+                                    Which when 'flex-basis' property is apply, it
+                                    increases the width. If the flex-direction is set to
+                                    'column' the main axis will now be vertical and the 
+                                    cross-axis will now be the horizontal line. Which means
+                                    when 'flex-basis' property is apply, it will increase the
+                                    height. 
+                                </p>
+                                <div class="code-parents">
+                                    <div class="code">
+                                        <li>
+                                            .main { <br>
+                                                display: inline-flex; <br>
+                                                background-color: darkblue; <br>
+                                                border: solid rebeccapurple 5pt; <br>
+                                                gap: 120px; <br>
+                                                color: yellowgreen; <br>
+                                                font-size: 1.1rem; <br>
+                                                flex-direction: column; <br>
+                                            } <br>
+                                    
+                                            .red { <br>
+                                                background-color: red; <br>
+                                            } <br>
+                                    
+                                            .green { <br>
+                                                background-color: green; <br>
+                                            } <br>
+                                    
+                                            .brown { <br>
+                                                background-color: brown; <br>
+                                            } <br>
+                                    
+                                            .main > * { <br>
+                                                flex-basis: 80pt; <br>
+                                            } <br>
+                                        </li>
+                                    </div>
+                                </div>
+                                <p>In the above example, since the 'flex-direction' is 
+                                    column, flex-basis will increase the height of each 
+                                    items. If it is at default of row. The width will 
+                                    increase instead. We used 'inline-flex' to make the
+                                    full-width not at default of block instead it should 
+                                    take the width of the content.
+                                </p>
+                            </ul>
+                        </li>
+                        <li style="list-style: circle;">Flex-layout
+                            <p>Align, justify and wrap. Note: you have to differentiate
+                                whether properties is from parent(container) or the child
+                                (flex-items). For example, 'order' can only be set on the 
+                                flex-items. Default order of html element is '0'.
+                                Also, we have 'flex-wrap' which is applicable to the parent 
+                                (container). The default is 'nowrap' which makes our container
+                                not responsive as it'll cut-off some items. Which we can set to 
+                                'wrap' which make our items continue to other line when the first 
+                                line can't contain them. For Demonstration click =>
+                                <a href="https://appbrewery.github.io/flex-layout/">Demo</a> <br>
+                            </p>
+                            <h5 style="margin: 0px;">Parent Properties(Flex-Container)</h5>
+                            <ul>
+                                <li>Flex-direction</li>
+                                <li>Flex-wrap
+                                    <ul>
+                                        <p>
+                                            This is useful when we run out of space on the 
+                                            horizontal. The default settings is set to 'nowrap'.
+                                            Which we can set to 'wrap', which move all element 
+                                            that the first line can't contain onto the next line.
+                                            We also have 'wrap-reverse' which make things wrap from
+                                            bottom right to the top left corner. Instead of the 
+                                            normal version which is from top left to bottom right.
+                                        </p>
+                                    </ul>
+                                </li>
+                                <li>Justify-content
+                                    <p>This sets the distribution of our items along main-axis.
+                                       Properties are: 'flex-start', 'flex-end', 'space-evenly',
+                                       'space-around', 'space-between' and 'center'. 
+                                    </p>
+                                </li>
+                                <li>Align-content
+                                    <ul>
+                                        <p>
+                                            This is similar to 'align-items but only works with 'wrap'. 
+                                            When we set our items to wrap and we want to specify how the 
+                                            content should align, then 'align-content' comes to play. For 
+                                            example, if we applied 'align-content' to center and we made 
+                                            our flexbox wrap, then when the width of our window reduces 
+                                            everything will be muzzle up together. If second line is needed
+                                            they'll go to the second line and then it'll look the 'align-content'
+                                            value to see how it should be space on the screen. When items is 
+                                            'nowrap' and we set the 'align-content', it doesn't really do anything.
+                                            But when we set items to 'wrap', and then there is not enough width to
+                                            have everything on one line, that's when our 'align-content' comes into 
+                                            action. Properties are: 'baseline', 'flex-start', 'flex-end', 'stretch'
+                                            and 'center'.
+                                        </p>
+                                    </ul>
+                                </li>
+                                <li>Align-items
+                                    <ul>
+                                        <p>
+                                            Unlike the 'justify-content' which is applicable along 
+                                            horizontal axis. 'align-items' distribute across 'cross
+                                            axis'. For this properties to work, we have to set its 
+                                            height. eg: height: 50vh; That is the 'viewport height'.
+                                            Properties involves: 'baseline', 'flex-start', 'flex-end',
+                                            'stretch' and 'center'. If wrap was enable, the behavior
+                                            will be cringe which we've expatiate when we discussed 'align
+                                            content'. Best to keep it as 'nowrap'. We can reach individual
+                                            property using <span style="font-size:large; font-weight: bolder;">align-self</span>
+                                        </p>
+                                    </ul>
+                                </li>
+                                <li>Gap, row-gap, column-gap
+                                    <p>This controls the space between flex items. It applies that
+                                        spacing only between items not on the outer edges.
+                                    </p>
+                                </li>
+                                <li>Flex-flow
+                                    <p>This is the shorthand for both 'flex-direction and 'flex-wrap'</p>
+                                </li>
+                            </ul>
+                            <h5 style="margin: 0px;">Properties for the Child(flex items)</h5>
+                            <ul>
+                                <li>order
+                                    <ul>
+                                        <p>
+                                            Default value of every items is 'zero'
+                                        </p>
+                                    </ul>
+                                </li>
+                                <li>align-self</li>
+                                <li>flex-grow</li>
+                                <li>flex-shrink</li>
+                                <li>flex-basis</li>
+                                <li>flex</li>
+                            </ul> 
+                            For more details please visit <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">Flex-tricks</a>
+                        </li> 
+                    </ul>
+                </li>
+                <li>Flex-sizing[Shrinking and Growing]
+                    <ul>
+                        <p>Flexbox has default behavior to adjust to content size but 
+                            here we'll dive into full way to customize the behavior to 
+                            our taste. In flexbox, we have a priority list which is range 
+                            from 'content-width < width < flex-basis < max-width/min-width'
+                            It first look at whether max-width/min-width is set, then flex-basis,
+                            width, and finally the content-width. 'content-width' allows content 
+                            to lie up next to each other. If shrink, it'll reduce to 'minimum-width'
+                            which is where the text wraps and they are stacked on top each other. 
+                            The default behavior of flexbox is to shrink until it reach the minimum
+                            content size. The longest word determine the final size. On getting to the 
+                            minimum width, all of the content start disappearing as shrinking continues.
+                        </p>
+                        <h5>Priorities:
+                            <ol>
+                                <li value="5">content-width
+                                    <ul>
+                                        <p>This is the default behavior of container which makes 
+                                            content fit the entire line.
+                                        </p>
+                                    </ul>
+                                </li>
+                                <li value="4">width
+                                    <ul>
+                                        <p>If we set width, each item will conform with 
+                                            the set width. Assume we set width to 100px. 
+                                            on 4 items. When the container shrunk, it'll 
+                                            respect the set width until there is not enough 
+                                            overall width of the container. Which is 400px 
+                                            considering our example here. So if the container 
+                                            width get lesser than 400px, it'll adjust to the 
+                                            minimum-size of the content(longest words). It'll 
+                                            respect our set width when there is enough space 
+                                            for the container otherwise it'll adjust dynamically
+                                            until minimum width of each item  is attain. 
+                                        </p>
+                                        <p>Note: At default, if we had nothing set on the container
+                                            it'll look at the entire line when it's all on one line.
+                                            Which will be the 'content-width' but if width is set 
+                                            it'll adjust to the width instead of the content-width.
+                                            So, 'width' will be obey till we shrunk the container.
+                                            Where it no longer fit everything as set width, then it
+                                            starts shrinking the box.
+                                        </p>
+                                    </ul>
+                                </li>
+                                <li value="3">flex-basis
+                                    <ul>
+                                        <p>This increase 'width' when container is at default(rows)
+                                            But increase 'height' when 'flex-direction' is at column.
+                                            'flex-basis' overshadow' 'width' when both are set on an 
+                                            items. It'll adjust to set value of 'flex-basis' as long 
+                                            as there is enough room in the container, But as soon as 
+                                            we shrink the container down, just as before, it'll adjust 
+                                            to the 'minimum-width'
+                                        </p>
+                                    </ul>
+                                </li>
+                                <li value="2">min-width
+                                    <ul>
+                                        <p>This looks at longest words to determine the minimum-width. Which
+                                            determine how small each items can shrink to. For example, if 
+                                            'flex-basis' is 200px and 'min-width' is 300px, the items will 
+                                            respect the 'min-width' instead of the 'flex-basis'. 'min-width'
+                                            overshadow 'flex-basis' when it's larger than 'flex-basis'. Items 
+                                            does not shrink beyond 'min-width' size.
+                                         </p>
+                                    </ul>
+                                </li>
+                                <li value="1">max-width
+                                    <ul>
+                                        <p>This looks at longest possible line of the text. So it's all of 
+                                            content lined up in one line. We can customize this, for example, 
+                                            if we set 'max-width' to 100px and our flex-basis is 200px.
+                                            'max-width' will overpower the flex-basis property because it's 
+                                            lower than the 'flex-basis'. 'max-width' is the maximum requirement
+                                            for the items to grow. But if 'flex-basis' is smaller, it'll ignore 
+                                            the 'max-width'.
+                                        </p>
+                                    </ul>
+                                </li>
+                            </ol>
+                        </h5>
+                        <h5>Flex Reactivities
+                            <ul>
+                                <li>flex-grow</li>
+                                <li>flex-shrink</li>
+                                <p>CASES
+                                    <ul>
+                                        <div class="code-parents">
+                                            <div class="code">
+                                                <li>flex-basis: 100px; flex-grow: 0; flex-shrink: 0
+                                            </div>
+                                        </div>
+                                            <ul>
+                                            <p>They can be understood better by turning both off by 
+                                                setting them to '0'. So setting 'flex-basis' to 100px 
+                                                and the both grow & shrink to '0' make flexbox not a 
+                                                flexbox any longer as the container stops reacting to 
+                                                ability to increase and decrease.
+                                            </p>
+                                            </ul>
+                                        </li>
+                                       <div class="code-parents">
+                                        <div class="code">
+                                            <li>flex-basis: 100px; flex-grow: 1; flex-shrink: 0
+                                        </div>
+                                       </div>
+                                            <ul>
+                                                <p>
+                                                    Each items will start out as 100px, it'll then grow 
+                                                    because we've switch the flex-grow on. And it'll respect 
+                                                    that as long as there is enough space, it'll increase the 
+                                                    width of each of the items until the entire width of the 
+                                                    container is filled up by each items. So when the container 
+                                                    width is reduce, it gets reduce to the flex shrink amount which 
+                                                    is the 'flex-basis' value. Any further than that will makes the
+                                                    items to disappear.
+                                                </p>
+                                            </ul>
+                                        </li>
+                                        <div class="code-parents">
+                                            <div class="code">
+                                                <li>flex-basis: 100px; flex-grow: 0; flex-shrink: 1 (Flexbox Default)
+                                            </div>
+                                        </div>
+                                            <ul>
+                                                <p>
+                                                    By default, it'll set each items to the 'flex-basis'
+                                                    value but it'll not grow to fit the entire space of the
+                                                    container. But it'll shrink beyond the 'flex-basis' value.
+                                                    Until 'minimum width' is reach and because we did not set
+                                                    it, then it'll adjust to the 'content-width'
+                                                </p>
+                                            </ul>
+                                        </li>
+                                       <div class="code-parents">
+                                        <div class="code">
+                                            <li>flex-basis: 100px; flex-grow: 1; flex-shrink: 1
+                                        </div>
+                                       </div>
+                                            <ul>
+                                                <p>Switching on both means it'll take much width as possible 
+                                                    and when shrink, it'll be as small as possible. Which 
+                                                    'flex-basis' is completely ignored. So here:
+                                                    'flex-grow' represent 'max-width while'
+                                                    'flex-shrink' represent 'min-width'. If these two are not 
+                                                    set, it'll adjust to the content of those items.  
+                                                </p>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <div class="code-parents">
+                                                <div class="code">
+                                                    flex-basis: auto; flex-grow: 1; flex-shrink: 1
+                                                </div>
+                                            </div>
+                                            <ul>
+                                                <p>The default of 'flex-basis' is 'auto'. Which look at amount 
+                                                    of content in each items, it'll gives more 'flex-basis' to 
+                                                    the items with more content. And it'll give less width to
+                                                    the one with smaller content. If we want that to be equal
+                                                    width, we simply set it 'flex-basis' to '0'
+                                                </p>
+                                            </ul>
+                                        </li>
+                                        <h5>SHORTHAND
+                                            <ul>
+                                                <div class="code-parents">
+                                                    <div class="code">
+                                                        <li>flex: 1 1 0
+                                                    </div>
+                                                </div>
+                                                    <ul>
+                                                        <p>
+                                                            This means both flex-grow and flex-shrink is 1.
+                                                            flex-basis is '0'
+                                                        </p>
+                                                    </ul>
+                                                </li>
+                                               <div class="code-parents">
+                                                <div class="code">
+                                                    <li>flex: 1
+                                                </div>
+                                               </div>
+                                                    <ul>
+                                                        <p>
+                                                            This means both flex-grow and flex-shrink is 1 and 
+                                                            flex-basis is 0. Which is same as the first instance.
+                                                            The value/ratio can be more than '1'.
+                                                        </p>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </h5>
+                                    </ul>
+                                </p>
+                        </h5>
+            </div>
+
+            <div class="sections">
+                <h3><li>Grid(Two-dimensional layout)</h3>
+                    <ul>
+                        <p>Grid is more suitable to create complex web layout. 
+                            'Flexbox' is best to align content along one dimensional 
+                            line. So either 'x or y' axis. While 'Grid' is good to
+                            align content alone a two dimensional layout. So both 
+                            'x and y' axis. Both flexbox and grid can be mix together.
+                            We can as well create one dimensional Grid. But it behave
+                            differently. Grid behavior tends to line up on each Other
+                            on a column and row basis and the gap between items match.
+                            Whereas, flexbox act differently because it's flexible and 
+                            tries to adapt and squish content so that everything is place 
+                            on screen. So depending on the behavior we seek, whether to 
+                            prioritize spacing out content and aligning them or we want 
+                            everything to be boxy like a grid.
+                            Check <a href="https://appbrewery.github.io/grid-vs-flexbox/">
+                                Flexbox@Grid </a> 
+                            for details comparison
+                        </p>
+                        <p>
+                            <div class="code-parents">
+                                <div class="code">
+                                    <li>
+                                        Grid usage: <br> .container {display: grid;<br>
+                                            grid-template-columns: 1fr 2fr; <br>
+                                            grid-template-rows: 1fr 1fr;<br>
+                                            gap: 10px<br>
+                                          }
+                                    </li>
+                                </div>
+                            </div>
+                            This simply means. Create two columns with one column as 
+                            fraction of size of 1 and the other column twice the size.
+                            Then create 2 rows with both 1 fraction of size with 10px 
+                            of space.
+                            Note: Default behavior of grid is to take as much full width, 
+                            but only has as much height as it allows to fit the content.
+                        </p>
+                    </ul>
+                </li>
+                <li>Grid Sizing
+                    <ul>
+                        <p>There are severals types: 
+                           Check <a href="https://appbrewery.github.io/grid-sizing/">Grid-sizing</a>
+                        </p>
+                        <p>
+                            We'll see preview of different kind of grid-sizing. We'll see live preview
+                            e.g 'fixed-size': which is not responsive to screen size.
+                        </p>
+                        <li>Fixed-Size 
+                            <ul>
+                                <div class="code-parents">
+                                    <div class="code">
+                                        <li>
+                                            .grid-container {  <br>
+                                                display: grid; <br>
+                                                grid-template-rows: 100px 200px; <br>
+                                                grid-template-columns: 400px 800px; <br>
+                                                }
+                                        </li>
+                                    </div>
+                                </div>
+                                <p>
+                                    In this instance, we define rows and columns by giving them 
+                                    fixed sizes(px). So we have 2 by 2. Two rows of 100px high for 
+                                    the first row, 200px high for the second row.
+                                    Two columns of 400px wide for the first one and 800px wide for 
+                                    the second column.
+                                    Fixed-size grid are not responsive. That means that if we go
+                                    ahead and change the width or height, it's not going to change 
+                                    at all. It's going to stay fixed to the specified size we set
+                                    above. In addition to 'px', we can also use 'Rem' Which is still 
+                                    fixed because 'rem' is relative to the root of our html. If our 
+                                    body/html has a size specified and we change that size then the
+                                    'rem' size will go up and down with it. But this does not make it 
+                                    responsive to the screen size.
+                                    Instead of specifying grid-template rows and grid-template columns 
+                                    we can shorten it to "grid-template: 100px 200px / 400px 800px". 
+                                    Rows comes first, then column follows.
+                                </p>
+                            </ul>
+                        </li>
+                        <li>Auto-Size
+                            <ul>
+                                <div class="code-parents">
+                                    <div class="code">
+                                        <li>
+                                            We can also use 'auto' => <br> .grid-container { <br>
+                                                display: grid; <br>
+                                                grid-template-rows: 100px auto; <br>
+                                                grid-template-columns: 200px auto; <br>
+                                            }
+                                        </li>
+                                    </div>
+                                </div>
+                                <p>
+                                    Unlike before 'Auto' now add a bit of responsiveness. Each row will 
+                                    try to fit to 100% of the horizontal available space. In our case now 
+                                    we'll have a first 'column' as '200px' then the other one which is auto 
+                                    will cover the rest space available width. 'Rows' behave differently, it 
+                                    doesn't try to take 100% height. Instead, it tries to fit the content. In 
+                                    our case, first row is 100px, the second row which is auto will try to fit 
+                                    the content. 
+                                </p>
+                            </ul>
+                        </li>
+                        <li>Fractional-Size
+                            <ul>
+                                <div class="code-parents">
+                                    <div class="code">
+                                        <li>This is achieve using ratio(fr) to define layout for sizes eg: <br>
+                                            .grid-container { <br>
+                                                display: grid; <br>
+                                                grid-template-rows: 1fr 2fr; <br>
+                                                grid-template-columns: 1fr 2fr; <br>
+                                            }
+                                        </li>
+                                    </div>
+                                </div>
+                                <p>The above illustration depict that the first row is 1fr and the 
+                                    second row is twice the size of the first row. Same logic for
+                                    column. This will grow and as well shrink depending on the width
+                                    available for the horizontal and also the content size available 
+                                    for the vertical. This is responsive type as it always maintain
+                                    the figure size provided. Even if we add additional contents, it'll 
+                                    expand and still keep the size uniform to the provided figure ratio.
+                                </p>
+                            </ul>
+                        </li>
+                        <li>MinMax Size
+                            <ul>
+                                <div class="code-parents">
+                                    <div class="code">
+                                        <li>Sometimes we want to define how the screen is responsive especially
+                                            on the horizontal. <br>
+                                            .grid-container { <br>
+                                                display: grid; <br>
+                                                grid-template-rows: 200px 400px; <br>
+                                                grid-template-columns: 200px minmax(400px, 800px); <br>
+                                            }
+                                        </li>
+                                    </div>
+                                </div>
+                                <p>We denotes two rows with first being 200px and the second as 400px.
+                                    The first column is 200px but the second column has two instances
+                                    with first condition applicable to when the screen has little space 
+                                    we infer 400px as minimum display and 800px wide when the screen has 
+                                    enough space. This set a limit. Because sometimes, we have some kind 
+                                    of contents that we don't want to be too narrow or too wide. So our 
+                                    grid now range from 400px to 800px. So a stop at 400px and stop at 800px 
+                                    for responsiveness strain.
+                                </p>
+                            </ul>
+                        </li>
+                        <li>Repeat
+                            <ul>
+                                <div class="code-parents">
+                                    <div class="code">
+                                        <li>This cut-off repetition <br>
+                                            .grid-container { <br>
+                                                display: grid; <br>
+                                                grid-template-rows: repeat(2, 200px); <br>
+                                                grid-template-columns: repeat(2, 100px); <br>
+                                            }
+                                        </li>
+                                    </div>
+                                </div>
+                                <p>This simply denote that we want two 200px rows. And two 100px column.
+                                    Which is same as defining rows as '200px, 200px'. And column as 
+                                    '100px, 100px'.
+                                </p>
+                                <p>
+                                    What if we define grid than amount of div's we have? for example, we 
+                                    have 4 items or div's and we define 2 by 3 grid. So two rows and three 
+                                    columns. If we only have 4 items, they're fitted into our grid from the 
+                                    top left to the bottom right. So that means once we've laid out the first 
+                                    row, it'll double back and continue along the second row. But if we don't
+                                    have any items for number five and six, then it won't add them.
+                                    <div class="code-parents">
+                                        <div class="code">
+                                            .grid-container { <br>
+                                                display: grid; <br>
+                                                grid-template-rows: repeat(2, 200px); <br>
+                                                grid-template-columns: repeat(3, 100px); <br>
+                                            }
+                                        </div>
+                                    </div>
+                                </p>
+                                <p>What if we don't define enough rows and columns? for example: </p>
+                                    <div class="code-parents">
+                                        <div class="code">
+                                            <li>
+                                                .grid-container { <br>
+                                                    display: grid; <br>
+                                                    grid-template-rows: 200px 200px; <br>
+                                                    grid-template-columns: 200px 200px; <br>
+                                                }
+                                            </li>
+                                        </div>
+                                    </div>
+                                    <p>
+                                        In this case, we have 2 by 2 grid system with each item being 200px 
+                                        tall and wide. If we have items/div's of five number which won't fit 
+                                        our template, the fifth items  when added we automatically be assign 
+                                        with size based on its height and also any existing column sizes. So 
+                                        it'll try to meet existing column width and we try to fit to the height 
+                                        of the content.
+                                    </p>
+                                <p>We can tweak the extra div to our likening. eg: </p>
+                                   <div class="code-parents">
+                                    <div class="code">
+                                        <li>
+                                            .grid-container { <br>
+                                                display: grid; <br>
+                                                grid-template-rows: 200px 200px; <br>
+                                                grid-template-columns: 200px 200px; <br>
+                                                grid-auto-rows: 300px <br>
+                                            }
+                                        </li>
+                                    </div>
+                                   </div>
+                                    <p>
+                                        So we basically said any more div that's not accounted for in our template 
+                                        should have 300px in height. We also have 'grid-auto-columns'. So with this 
+                                        logic, we are able to control our styling no matter the amount of div's added
+                                        to the grid.
+                                    </p>
+                            </ul>
+                        </li>
+                        <li>Using Chrome Dev Tool
+                            <ul>
+                                <p>When display is at grid, there is a chip that shows 'grid'
+                                    which when click, it display some information. Which we
+                                    can change the layout.
+                                </p>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>Grid Item Placement
+                    <ul>
+                        <p>We first need to look at some grid placement terminologies :</p>
+                        <li>Lines
+                            <ul>
+                                <p>This separate our tracks. We have horizontal lines and vertical 
+                                    lines, these is known as the grid lines. We can only control
+                                    the grid lines by using the gap property to specify its width 
+                                    or height. But we can't change its color, we cant put anything 
+                                    in the lines. They are lines for layout.
+                                </p>
+                            </ul>
+                        </li>
+                        <li>Tracks
+                            <ul>
+                                <p>When we create and size our grid, we create rows and columns.
+                                    These is known as tracks. We have rows tracks and columns
+                                    tracks and we usually create and size these tracks using 
+                                    grid-template-rows and grid-template-columns[grid-template]
+                                    for shortcut.
+                                </p>
+                            </ul>
+                        </li>
+                        <li>Cells
+                            <ul>
+                                <p>Cells is being created within the intersection of tracks. Which 
+                                    is a small unit also known as grid cells. They are the smallest 
+                                    unit in a grid and can be of different sizes. So one can be wider 
+                                    than the other that is to occupy more columns, while other can have 
+                                    height than the other, which means to occupy more rows. We can 
+                                    use multiple cells to create a grid items. So we can either position
+                                    our grid cell horizontally or vertically across grid cells
+                                </p>
+                            </ul>
+                        </li>
+                        <li>Container
+                            <ul>
+                                <p>This is the parent container div that contain div's items</p>
+                            </ul>
+                        </li>
+                        <li>Items
+                            <ul>
+                                <p>This are the parent container children.</p>
+                            </ul>
+                        </li>
+                            <div class="code-parents">
+                                <div class="code">
+                                    &lt;div class="container"&gt; <br>
+                                    &lt;div class="item cowboy"&gt; 🤠 &lt;/div&gt; <br>
+                                    &lt;div class="item astronaut"&gt; 🧑🏿‍🚀 &lt;/div&gt; <br>
+                                    &lt;div class="item book"&gt; 📖 &lt;/div&gt;  
+                                    <br>&lt;/div&gt; 
+                                    <br>
+                                    .container { <br>
+                                    height: 100vh; <br>
+                                    display: grid; <br>
+                                    gap: 3rem; <br>
+                                    grid-template-rows: 1fr 1fr; <br>
+                                    grid-template-columns: 1fr 1fr 1.5fr; <br>
+                                    } <br>
+                                </div>
+                            </div> 
+                            <p> 
+                            Note: By default, a div is going to span the entire width of the window, 
+                            but it'll only occupy as much vertical space as there is content. Hence,
+                            the reason why we set height viewport height to 100, then it's also going 
+                            to take that container and make it stretch all the way down to the bottom 
+                            of the window. So the above code, we already known we create tracks using 
+                            both grid-template-rows and grid-template-columns. So we created 3 columns 
+                            with two of them being equal in width while the third one is a bit wider 
+                            and we created two rows of equal height. So now, we've got tracks, lines 
+                            and also container. Now the items will be place in by default. It'll start 
+                            from the first and it'll go into each of the cells that are available. We 
+                            can use Flexbox to target grid items to position them.
+                        </p>
+                        <li>
+                            Flexbox to center the item
+                            <ul>
+                                <div class="code-parents">
+                                    <div class="code">
+                                        <li>.item { <br>
+                                            display: flex; <br>
+                                            align-items: center; <br>
+                                            justify-content: center; <br>
+                                            background-color: purple <br>
+                                            }
+                                        </li>
+                                    </div>
+                                </div>
+                            </ul> 
+                        </li>
+                        <li>Increase the width of the cowboy
+                            <ul>
+                                <div class="code-parents">
+                                    <div class="code">
+                                        <li>
+                                            .cowboy { <br>
+                                                background: gold; <br>
+                                                grid-column: span 2; <br>
+                                            }
+                                        </li>
+                                    </div>
+                                </div>
+                                <p>This increase the width of the cowboy by spreading in width length
+                                    from column one to two. We can use the chrome dev tools to inspect.
+                                    We'll be able to see the lines and the tracks in our grid. So span 
+                                    of two makes our cowboy div go from track one to track 3 range[1-3]
+                                    which makes span two to be the bridge between column 1 and column 3.
+                                    grid-column is the short form of 'grid-column-start' and grid-column-end.
+                                    For example: grid-column-start: 2; grid-column-end: 4; This simply 
+                                    means that position start from column 2 and end at column 4. We can 
+                                    also use negative value to specify the last column on a grid. So the 
+                                    last one is -1. We have -1, -2, -3 and so on... Also, we can start 
+                                    and end at whichever direction we want. eg: grid-column-start: 4; 
+                                    grid-column-end: 2; This will be flip and still still start at 
+                                    column 2 and ends at column 4. Also, we can even for example: 
+                                    grid-column-start: span 2; grid-column-end: auto; So the auto is 
+                                    the automatically the initial position of our div before we did any 
+                                    positioning which is the first line in our case.
+                                </p>
+                                <p>There is also a corresponding property known as 'grid-row' which is also 
+                                    short form of 'grid-row-start' and 'grid-row-end'. Which is use to cover 
+                                    vertical cells our grid want to span.
+                                </p>
+                            </ul>
+                        </li>
+                        <li>Place astronaut under cowboy and then increase its width 
+                            <ul>
+                               <div class="code-parents">
+                                <div class="code">
+                                    <li>
+                                        .astronaut { <br>
+                                            background-color: coral; <br>
+                                            grid-column: span 2 <br>
+                                            order: 1; <br>
+                                        }
+                                       </li>
+                                </div>
+                               </div>
+                                <p>Natural position of the astronaut div is beside cowboy. To change 
+                                    that position to be the last and under cowboy instead, we use 
+                                    order property to set it to 1. Default order is 0. So we increase 
+                                    the order of the astronaut.
+                                </p>
+                                <p>Another way to go by this without using order property is:</p>
+                                <div class="code-parents">
+                                    <div class="code">
+                                        <li>
+                                            .astronaut { <br>
+                                                background-color: coral; <br>
+                                                grid-row-start: 2; <br>
+                                                grid-column-start: 1; <br>
+                                                grid-row-end: 3; <br>
+                                                grid-column-end: 3; <br>
+                                            }
+                                        </li>
+                                    </div>
+                                </div>
+                                <p>With this being explicit, we simply navigate to pinpoint the 
+                                    row we want the div to start, then follow by the column to 
+                                    start, then row for it to end and to which column to end.
+                                    The four properties shorthand is grid-area: 2 / 1 / 3 / 3. 
+                                    grid-row-start / grid-column-start / grid-row-end / grid-column-end.
+                                    Notes: If 'grid-area' is use on a div, you have to make sure to
+                                    use it on other div's as well to make them behave properly.
+                                </p>
+                            </ul>
+                        </li>
+                        <li>Increase the height of the book div to same level as astronaut
+                            <ul>
+                                <div class="code-parents">
+                                    <div class="code">
+                                        <li>
+                                            .book { <br>
+                                                background-color: seagreen; <br>
+                                                grid-row; span 2 <br>
+                                            }
+                                        </li>
+                                    </div>
+                                </div>
+                                <p>This now takes up two rows. Which means the vertical is being 
+                                    increased.
+                                </p>
+                                <p>Another way to achieve the same result is doing it explicitly</p>
+                                <div class="code-parents">
+                                    <div class="code">
+                                        <li>
+                                            .book { <br>
+                                                background-color: seagreen; <br>
+                                                grid-row-start: 1; <br>
+                                                grid-column-start: 3; <br>
+                                                grid-row-end: 3; <br>
+                                                grid-column-end: 4; <br>
+                                            }
+                                        </li>
+                                    </div>
+                                </div>
+                                <p>With this being explicit, we simply navigate to pinpoint the 
+                                    row we want the div to start, then follow by the column to 
+                                    start, then row for it to end and to which column to end.
+                                    The four properties shorthand is grid-area: 1 / 3 / 3 / 4. 
+                                    grid-row-start / grid-column-start / grid-row-end / grid-column-end.
+                                    Notes: If 'grid-area' is use on a div, you have to make sure to
+                                    use it on other div's as well to make them behave properly. Also 
+                                    it can be of coordinate 1 / 3 / -1 / -1. Which is using negative 
+                                    number to denote the last row and the last column.
+                                </p>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>Overlay of items onto other items
+                    <ul>
+                        <p>This is the biggest difference between grid and flexbox.
+                            Grid let us overlay items onto other items. So we can 
+                            position items on top of each other in a grid.
+                        </p>
+                        <div class="code-parents">
+                            <div class="code">
+                                <li>
+                                    .cowboy { <br>
+                                        background-color: #00B9FF; <br>
+                                        grid-area: 1 / 1 / 2 / 3 <br>
+                                    } <br>
+        
+                                    .astronaut { <br>
+                                        background-color: #03989E; <br>
+                                        grid-area: 2 / 1 / 3 / 3 <br>
+                                    } <br>
+        
+                                    .book { <br>
+                                        background-color: #E5833180; <br>
+                                        grid-area: 1 / 2 / 3 / 4 <br>
+                                    }
+                                </li>
+                            </div>
+                        </div>
+                        <p>The '80' number in book color represent transparency rate. In Hex 
+                            code, the first six character correspond to the color so the amount
+                            of red, green, and blue. Then we can add a value known as 'alpha'
+                            which denote how much transparency there is. 80 is about 50% of 
+                            transparency that allows us to see through the orange and the blue
+                            and the green. So the book coordinate is also set to overlap, starting 
+                            from row one, column two then end at row three and column four.
+                        </p>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        </div>
+        <div class="sections">
+            <h3><li>Bootstrap</h3>
+                <ul>
+                    <p>Bootstrap is a css framework created in 2010 by twitter devs.
+                        It contain pre-made css files. We simply apply bootstrap to 
+                        our html simply by adding its CDN(Content Delivery Network). 
+                        to the head section. There are two cdn links available on the
+                        site. Css(for styling) and javascript(for reactive) js should 
+                        be place before body tag close. With bootstrap, we have a good 
+                        browser compatibility. Let's take for example by styling a 
+                        button with bootstrap.
+                    </p>
+                    <div class="code-parents">
+                        <div class="code">
+                            <li>&lt;ul class="nav nav-pills"&gt; <br>
+                                &lt;li&gt; <br>
+                                &lt;button class="nav-link active rounded-5"&gt; <br>
+                                Home <br>
+                                &lt;/button&gt; <br> 
+                                &lt;/li&gt; <br>
+                                &lt;/ul&gt;
+                            </li>
+                        </div>
+                    </div>
+                    <p>With just five class from bootstrap class. So we include 
+                        prebuilt bootstrap css into our project. And we add the 
+                        styling and the components by adding the class into html. 
+                        There are lot of other css framework. Such as: tailwind 
+                        material ui, foundation and so on.
+                    </p>
+                    <p>Downside of css frameworks is 'class boat' which occur because
+                        we add every classes inside the html. 
+                        Also, customization.
+                    </p>
+                    <p>We can easily check bootstrap docs for any components of our 
+                        choice. Get started <a href="./https://getbootstrap.com/docs
+                        /5.3/getting-started/introduction/">Bootstrap</a> For
+                        customization like using vanilla css with Bootstrap,
+                        always be sure you place the external link after the bootstrap
+                        cdn links.
+                    </p>
+                </ul>
+                <ul>
+                    <li>Bootstrap layout
+                        <ul>
+                            <p>Understanding the 12 column bootstrap layout. It is made 
+                                of 3 components: div container, div of class row, and
+                                inside the row is where we have our items and they will 
+                                be laid out using the column system. Code example;  <br>
+                                <div class="code-parents">
+                                    <div class="code">
+                                        &lt;div class="container"&gt; <br>
+                                        &lt;div class="row"&gt; <br>
+                                        &lt;div class="col"&gt;Hello&lt;/div&gt; <br>
+                                        &lt;/div&gt; <br>
+                                        &lt;/div&gt; <br>
+                                    </div>
+                                </div>
+                            </p>
+                            <p>
+                                When we have multiple columns laid out inside rows, bootstrap
+                                automatically auto fit them. So if we had a container with row 
+                                up to six, it'll result to 6/12. If 3 rows, it'll take 3/12 of 
+                                the space. Here is link to bootstrap responsiveness pixel;
+                                <a href="https://getbootstrap.com/docs/5.3/layout/containers/">
+                                    layout pixel
+                                </a> This is only applicable to the 100% width viewport.
+                                In most cases, container and container-fluid is most use because 
+                                the container gives a margin around the left and right. And 
+                                container-fluid is when we want edge to edge behavior.
+                            </p>
+                            <div class="code-parents">
+                                <div class="code">
+                                    <li>Sized column involves for example; 1/12 * 100 = 8.33% <br>
+                                        class; col-1 col-2, col-3 col-4, col-6, col-12. <br>
+                                        fraction equivalent; 1/12, 2/12, 3/12, 4/12, 6/12, 12/12. <br>
+                                        percentage; 8.33%, 16.67%, 25%, 33.33%, 50%, 100%. <br>
+                                     </li>
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                    <li>Bootstrap breakpoint
+                        <ul>
+                            <div class="code-parents">
+                                <div class="code">
+                                    <p>This is point of break between different column we signify. eg 
+                                        col-sm of dimension >576 and col-md of dimension 768px simply 
+                                        mean, the small dimension will be applicable within the range 
+                                        of 576px and 768px and anything above 768px dynamically adapt 
+                                        to next dimension which is large. So we have; sm, m, lg, xl, xxl.
+                                        With bootstrap, we don't have to manually write media query again.
+                                        Examples; col-sm-2, col-sm-4, col-sm-6. So, this mean that when on 
+                                        a small screen, we want the dimension to be 2, 4, and 6. This means 
+                                        that, desktop, laptop, tv, and mobile will all have same size. But 
+                                        below the size of mobile, it'll default to 100% for each div's. 
+                                        We could also not add number, e.g; col-sm, col-sm, col-sm(which takes 
+                                        4 each. col-sm-4 12/3). If we don't define a number, it automatically
+                                        distribute. 
+                                    </p>
+                                </div>
+                            </div>
+                            <li>Multiple breakpoint
+                                <ul>
+                                    <div class="code-parents">
+                                        <div class="code">
+                                            <p>
+                                                Also, in a single div, we could have multiple breakpoint.
+                                                e.g; col-sm-12, col-md-8, col-lg-4. Which denotes that, on a large 
+                                                screen and above, it should take up 4 out of 12 of the width. On the 
+                                                medium size and above, it should take up 8 out of 12 width. And on 
+                                                small sizes 12 out of 12 width(full width). 
+                                            </p>
+                                        </div>
+                                    </div>
+                                </ul>
+                            </li>
+                            <li>Mix and match
+                                <ul>
+                                    <div class="code-parents">
+                                        <div class="code">
+                                            <p>
+                                                We could also mix and match the types of definitions. E.g;
+                                                col-2, col-4 and col. Take 2/12, 4/12 and col automatically
+                                                occupy to rest available space. 
+                                            </p>
+                                        </div>
+                                    </div>
+                                    For practice => <a href="https://appbrewery.github.io/bootstrap-layout/">
+                                        Layout-Practice
+                                    </a>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Bootstrap components
+                        <ul>
+                            <p>Components like prebuilt, pre-styled like buttons, cards,
+                                carousel and loads of things we get hold of simply by adding
+                                bootstrap class into our html.  
+                            </p>
+                            <li>
+                                Button component.
+                                <ul>
+                                    <div class="code-parents">
+                                        <div class="code">
+                                            <li>
+                                                &lt;button type="button" class="btn btn-success">success&lt;/button>
+                                            </li>
+                                        </div>
+                                    </div>
+                                    <p>
+                                        We simply create a button, then we gave it a bootstrap class name
+                                        'btn'. We then give it one of the default bootstrap Color, which 
+                                        is 'success' which is a 'green color'.
+                                    </p>
+                                </ul>
+                            </li>
+                            <li>
+                                Card component
+                                <ul>
+                                    <p>
+                                        We simply go to the component page and simply copy the code.
+                                    </p>
+                                </ul>
+                            </li>
+                            <li>
+                                Nav-bar
+                                <ul>
+                                    <p>We can narrow down to the component section or examples which 
+                                        is the header section
+                                    </p>
+                                    <p>To add a functional component like navbar, we have to add javascript
+                                        link in addition to css link. Unlike the css link that is inside
+                                        the head tag, the javascript will be just before the body tag 
+                                        ended.
+                                    </p>
+                                    <p>We also have examples section and also snippets that we can copy the div 
+                                        element we want from. Also there is an array of icons to utilize. We can 
+                                        also come in contact with some 'custom css' files to use.
+                                    </p>
+                                </ul> 
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Bootstrap utilities classes
+                        <ul>
+                            <p>One important aspect of this is spacing.</p>
+                            <div class="code-parents">
+                                <div class="code">
+                                    <li>
+                                        Spacing
+                                        <ul>
+                                            <li>p => padding, m => margin</li>
+                                            <li>mt => margin top, pt => padding top</li>
+                                        </ul>
+                                    </li>
+                                    <p>We have 'x for horizontal axis while y is for vertical axis.
+                                        Also size range from 0-5.
+                                    </p>
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                    <li>Bootstrap customize component
+                        <ul>
+                            <div class="code-parents">
+                                <div class="code">
+                                    <p>
+                                        To change our site to dark mode. <br>
+                                        &lt;html lang="en" data-bs-theme="dark"> <br>
+                                    </p>
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                    <li>Bootstrap Free Themes
+                        <ul>
+                            <li>
+                               <a href="www.w3schools.com/bootstrap/bootstrap_template.asp">
+                                bootstrap_template
+                               </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </div>
+        <div class="sections">
+            <h3><li>Web Design</h3>
+                <ul>
+                    <p>In this chapter, we'll be exploring various ways to 
+                        make our website elegant. 
+                    </p>
+                    <li>Web Design Principles 
+                        <ul>
+                            <p>There are four pillars involve in web design:</p>
+                            <li>Color Theory
+                                <ul>
+                                    <p>Color theory is the art and science of taking the right
+                                        pallette for our website. Strictly need to be aware of
+                                        the mood of our color pallette. For example:
+                                    </p>
+                                    <li>Red
+                                        <p>This symbolize dominance, love, energetic, intensity e.t.c
+                                            which is mostly use in car advert.
+                                        </p>
+                                    </li>
+                                    <li>Yellow
+                                        <p>
+                                            This is about joy, intellect, attention and yellow is an 
+                                            attention grabbing color. So yellow is great for logo and
+                                            also an headline. But when creating something that'll be 
+                                            look for a long period of time then yellow can be too 
+                                            concentrated as it's an attention grabber color which might 
+                                            be pain on users viewing experience. Imagine reading a text 
+                                            with background all in yellow.
+                                        </p>
+                                    </li>
+                                    <li>Green 
+                                        <p>
+                                            This is shows freshness, safety, growth and so on which most 
+                                            groceries utilizes a lot.
+                                        </p>
+                                    </li>
+                                    <li>Blue 
+                                        <p>Blue is about stability, serenity, trust which most companies 
+                                            adopt to preach how trustworthy they're. for example Paypal 
+                                            and it's viral color in cryptocurrency company.
+                                        </p>
+                                    </li>
+                                    <li>Purple 
+                                        <p>
+                                            This signify royalty, femininity, wealth
+                                        </p>
+                                    </li>
+                                    <li>Combining Colors
+                                        <p>Usually, we'll be combining colors. This is the most scientific 
+                                            part of the color theory.
+                                        </p>
+                                        <ul>
+                                            <li>Analogous
+                                                <p>
+                                                    This is act of taking two colors that are right next to 
+                                                    each other on color wheel. This help create analogous color 
+                                                    pallette. This kind of system is good for nav-bar, body of 
+                                                    our website, logo or its background. This approach is not 
+                                                    good in standing out
+                                                </p>
+                                            </li>
+                                            <li>Complimentary Color
+                                                <p>
+                                                    If we want our design to pop up, we're better by taking colors 
+                                                    from opposite end of the color wheel to create a Complimentary
+                                                    or clashing color pallette. They mostly make use of this approach 
+                                                    in supermarket by putting plastic grass in between meat and Because
+                                                    the green and the red are Complimentary colors, it makes the red 
+                                                    meat pop out more which gives freshness feelings.
+                                                </p>
+                                                <p>What we should'nt do with Complimentary color is not to style
+                                                    text and text background with it. E.g using green on text and 
+                                                    the text background as red. We should stick to using it in logos 
+                                                    or icons or things we really want to standout from each other.
+                                                </p>
+                                                <p>There are others ways that we can combine colors. Like 
+                                                    drawing equilateral triangle to create a triadic color 
+                                                    pallette or drawing a perfect square. 
+                                                    <a href="https://color.adobe.com/create/color-wheel">adobe color</a>
+                                                    is a generator of color website. With it, we can tweak  between 
+                                                    different color combination. We could also make use of a website 
+                                                    <a href="colorhunt.co">color hunt</a> Which have lot of already 
+                                                    generated colors
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Typography
+                                <ul>
+                                    <p>
+                                       Out of every font, two standout.
+                                    </p>
+                                    <li>Serif family
+                                        <ul>
+                                            <p>
+                                                They have little feat at the end of their central
+                                                beams. The reason for the old feat is as a result
+                                                of being inspired by marble carving of days of yore.
+                                                Under serif family, we have 
+                                                <li>Modern
+                                                    <ul>
+                                                        <p>Sub family is Didot</p>
+                                                    </ul>
+                                                </li>
+                                                <li>Old style
+                                                    <ul>
+                                                        <p>Adobe jenson as sub family</p>
+                                                    </ul>
+                                                </li>
+                                                <li>Transitional
+                                                    <ul>
+                                                        <p>Baskerville and time new roman as sub family</p>
+                                                    </ul>
+                                                </li>
+                                                <li>Slab Serif 
+                                                    <ul>
+                                                        <p>American Typewriter as sub family</p>
+                                                    </ul>
+                                                </li>
+                                                We can tell how old a typeface is by looking at the difference 
+                                                between the thickest and the thinnest part of each letter. 
+                                                For example, the 'O' in Old style, TransitiOnal and MOdern.
+                                                We'll see how difference between the thickest part of the letter 
+                                                and thinnest part more and more exaggerated as we get a more modern 
+                                                font. So for something more authoritative, but modern then we choose
+                                                modern serif typeface like didot. But if we want it to come across 
+                                                as a little bit older, then we choose old style serif instead.
+                                            </p>
+                                            <p>Just as color have different moods, fonts also have different moods
+                                                and they also convey a message to a user. Serif family is known as 
+                                                traditional, stable, respectable, authoritative
+                                            </p>
+                                        </ul>
+                                    </li>
+                                    <li>San serif family
+                                        <ul>
+                                            <p>
+                                                Instead of they having little feat at the end of central beam,
+                                                they have perfect right angles which makes it more friendly, novel  
+                                                approachable and contemporary. So it's sensible, straightforward
+                                                and simple. families include:
+                                                <li>Gill sans
+                                                    <ul>
+                                                        <li>Humanist</li>
+                                                    </ul>
+                                                </li>
+                                                <li>News gothic
+                                                    <ul>
+                                                        <li>Grotesque</li>
+                                                    </ul>
+                                                </li>
+                                                <li>Helvetica
+                                                    <ul>
+                                                        <li>New grotesque</li>
+                                                    </ul>
+                                                </li>
+                                                <li>Futura
+                                                    <ul>
+                                                        <li>Geometric</li>
+                                                    </ul>
+                                                </li>
+                                            </p>
+                                        </ul>
+                                        <p>San serif are highly readable which makes it grossly use 
+                                            more in body text
+                                        </p>
+                                        <p>
+                                            Things not do with font is to use many fonts like more than 3 
+                                            in a single design. Two fonts in one design is enough. When 
+                                            mixing fonts, we should stick with the one with similar moods 
+                                            and also similar time era. The things to contrast are the serifness 
+                                            e.g we want the headings to be of serif and body to be sanserif or 
+                                            the opposite. We can also change the weight between the headings and 
+                                            the body.
+                                        </p>
+                                        <p>There are lot other typeface but they are difficult to read</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>User Interface(ui)
+                                <ul>
+                                    <p>Typically, our brain is drawn to bigger and bolder things. We can
+                                        use this to define:
+                                    </p>
+                                    <li>Hierarchy
+                                        <ul>
+                                            <p>This is by making sure that the most important information is 
+                                                convey first. Hierarchy is emphasize in many ways. E.g:
+                                                <li>Color
+                                                    <p>Color that pops well and stand out and have contrast with 
+                                                        background tend to be use for high hierarchy.
+                                                    </p>
+                                                </li>
+                                                <li>Size
+                                                    <p>Bigger items draw our attention more</p>
+                                                </li>
+                                            </p>
+                                        </ul>
+                                    </li>
+                                    <li>Layout 
+                                        <ul>
+                                            <p>We can either have big block of text where everything is layout 
+                                                in the same way or we can be creative by creating a text and
+                                                then introducing pics, different sizes and shapes and different
+                                                hierarchy.
+                                            </p>
+                                            <p>Always aim for 40-60 characters per line for easy read of information
+                                                as display in your website.
+                                            </p>
+                                        </ul>
+                                    </li>
+                                    <li>Alignment 
+                                        <ul>
+                                            <p>This is how we position each element on the screen 
+                                                relative to each other. E.g: 
+                                            </p>
+                                            <li>
+                                                Making 'heading' center 
+                                                align and the body text 'left-aligned'. Rather to 
+                                                make both heading and the body text starting point
+                                                to be the same.
+                                            </li>
+                                            <li>
+                                                Reduce the alignment point
+                                                <ul>
+                                                    <p>This is done in such a way by looking at every 
+                                                        details of the page. Details, like headings, 
+                                                        body text and buttons. And then draw a line to 
+                                                        make them be place in exact same vertical line 
+                                                        drawn. This will make our design to look more 
+                                                        compact.
+                                                    </p>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>White space
+                                        <ul>
+                                            <p>This is an really important concept. This is the empty 
+                                                space around text or elements. Adding space to text or 
+                                                elements makes it more elegant.
+                                            </p>
+                                        </ul>
+                                    </li>
+                                    <li>Audience
+                                        <ul>
+                                            <p>Consider what will interest your audience as this
+                                                will go in a long way to instigate creativity to 
+                                                be dynamic as to when designing for different instances.
+                                            </p>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>User Experience(ux)
+                                <ul>
+                                    <p>
+                                        Unlike design, user experience is meant to be invisible. A good 
+                                        experience makes user do thing on the site effortlessly. To achieve 
+                                        this, we have a five things to follow.
+                                    </p>
+                                    <li>Simplicity
+                                        <ul>
+                                            <p>
+                                                Making thing as simple as possible is better than making it 
+                                                complex. Make it crystal clear not clutter. Make text distinct 
+                                                and crystal clear, use images and videos if needed. Use appealing
+                                                color combination to make the website look easy on users.
+                                            </p>
+                                        </ul>
+                                    </li>
+                                    <li>Consistency
+                                        <ul>
+                                            <p>
+                                                We should stick to make our design consistent, also the functionality.
+                                                Don't let people relearn how to operate your website. Make consistence
+                                                operation across pages of your website.
+                                            </p>
+                                        </ul>
+                                    </li>
+                                    <li>Reading Patterns 
+                                        <ul>
+                                            <p>
+                                                Study shows that proof that the common reading pattern is that of F-pattern.
+                                                There are also various pattern. E.g;
+                                            </p>
+                                            <li>F-Pattern 
+                                                <ul>
+                                                    <p>
+                                                        Where the eyes started at the top left of the corner which then tracks the 
+                                                        right and then flips back again browsing down the left gutter. Thing 
+                                                        like 'bullets point, images, button, icons' are all on the left sides.
+                                                    </p>
+                                                </ul>
+                                            </li>
+                                            <li>Z-Pattern/Layout 
+                                                <ul>
+                                                    <p>
+                                                        In this case, eyes move from left to right and then zig-zagging down to the 
+                                                        website. Ideal for website that's more sparse like if we have video contents 
+                                                        to display and it's also good for browsing website faster. Facebook utilize 
+                                                        the z-pattern.
+                                                    </p>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>All Platforms Design
+                                        <ul>
+                                            <p>
+                                                In this modern age, it's necessary to think of making our website to adapt 
+                                                to all kind of platforms. Ranging from desktop to mobile screen. We should 
+                                                scale our website efficiently across different platform. Make the text and 
+                                                other content moderate and ability to re-arrange to adapt to the available
+                                                screen space of the different platforms.
+                                            </p>
+                                        </ul>
+                                    </li>
+                                    <li>Don't use your power for evils
+                                        <ul>
+                                            <p>
+                                                This is known as dark-patterns. It's a way of creating a design to make user 
+                                                do what they don't intend to do.
+                                            </p>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </div>
+   </div>
+</body>
+</html>
