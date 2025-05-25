@@ -48,6 +48,7 @@ a:hover {
     justify-content: center;
     align-items: center;
     max-width: 50vh;
+    line-height: 2rem;
 }
 
 img {
