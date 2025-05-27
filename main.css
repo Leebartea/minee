@@ -39,6 +39,7 @@ a:hover {
     justify-content: center;
     background-color: #222831;
     color: white;
+    padding-bottom: 3rem;
 }
 
 .Hero {
@@ -90,18 +91,6 @@ li {
     max-width: 100%;
 }
 
-.exp {
-    border: 2px dashed;
-    border-radius: 15px;
-    
-}
-
-.edu {
-    border: 2px dashed;
-    border-radius: 15px;
-}
-
-
 #main-resume {
     display: flex;
     flex-direction: column;
@@ -109,11 +98,29 @@ li {
     align-items: center;
 }
 
-/* skills-section */
 
-.sk {
+.exp {
     border: 2px dashed;
     border-radius: 15px;
+    line-height: 2.5rem;
+}
+
+.edu {
+    border: 2px dashed;
+    border-radius: 15px;
+    line-height: 2.5rem;
+}
+
+.skills {
+    border: 2px dashed;
+    border-radius: 15px;
+    line-height: 2.5rem;
+}
+
+.projects {
+    border: 2px dashed;
+    border-radius: 15px;
+    line-height: 2.5rem;
 }
 
 /* About me-section */
@@ -131,6 +138,7 @@ li {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 2fr;
     max-width: 450px;
+    padding: 1.5rem;
 }
 
 .abt > p {
@@ -145,7 +153,7 @@ li {
     text-align: center;
     color: grey;
     font-style: italic;
-    margin-top: -22px;
+    padding: 30px;
 }
 
 .cnt {
