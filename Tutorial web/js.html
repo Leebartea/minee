@@ -4,8 +4,2124 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
 </head>
 <body>
-    <h1>Coming soon....</h1>
+    <div class="container">
+        <div class="sections">
+            <h1 id="title">
+                Javascript Introductions(ES6)
+            </h1>
+            <h2>Brief History</h2>
+            <p>Before, when a website need some functionality, it 
+                rely on web server which the web server then return
+                the webpage with new data. So netscape came about the
+                idea of wanting functionality not relying on web server.
+                So they contacted "Bredan Eich" which he was able to create 
+                JS in just 10 days. It was first known as "Livescript" and they 
+                microsoft reverser engineer the program and name it "Jscript". 
+                This differences create confuses then the european standardize 
+                the language and name it "ECMASCRIPT"(European Computer Manufacturers 
+                Association Script).
+            </p>
+            <h2>Website Without Javascript</h2>
+            <p>There will be no functionality on a website without "JS"
+                For example: We can search for "Javascript" in chrome browser
+                then under content, click "javascript" to enable it or not. 
+                If not allowed, it'll make website not function just normal 
+                static website will be render without any functionality. It 
+                even make us have ad-free website.
+            </p>
+            <h2>Why Called Javascript?</h2>
+            <p>
+                Well, the script is same has assigning a role and functionality
+                just as use in a play for an actor to do some specific task. In 
+                web development, the script is "Javascript" and the actor is the 
+                "HTML ELEMENT". E.g: one actor can be "h1" while the other can be 
+                "p" element.
+            </p>
+            <h2>Visualize Javascript</h2>
+            <div class="code-parents">
+                <div class="code">
+                    <p>
+                        Unhide h1 <br>
+                        1second delay <br>
+                        Unhide p <br>
+                        "h1" change text to "Hello" <br>
+                        "p" change text to "World" <br>
+                        <br>
+                        This result to: <br>
+                        h1 => Hello <br>
+                        p => World
+                    </p>
+                </div>
+            </div>
+            <p>In this case, we've simply instruct our element or players what 
+                should be done. This is way that the scripting language works.
+            </p>
+            <p>
+                Javascript is an interpreted language. Other interpreted languages 
+                includes: Python, Ruby e.t.c  We also have compiled languages which 
+                involves: Java, C/C++, Swift.
+            </p>
+            <p>Javascript is supported across major browsers. Although, other language 
+                can be compiled to javascript and execute on the browser.
+            </p>
+            <h2>Javascript alert(Adding behavior)</h2>
+            <p>We'll be using chrome as our script writer environment.</p>
+            <ul>
+                <h4>Using Chrome Console</h4>
+                    <ul>
+                        <p>
+                            So on chrome new tab page => click "view" => developer => 
+                            Javascript console. 
+                        </p>
+                            <div class="code-parents">
+                                <div class="code">
+                                    <p>
+                                        alert("Hello");
+                                    </p>
+                                </div>
+                            </div>
+                            <p>This will simply pop up the "Hello" on screen. But there is downside in using 
+                                chrome console for writing "js" it doesn't support continuous writing of code 
+                                across multiple lines, as soon as we hit enter, it execute the code which we can 
+                                only stop that by holding on shift button then hitting enter key when we want to 
+                                add more code in another line.
+                                <div class="code-parents">
+                                    <div class="code">
+                                        <p>
+                                            alert("Hello"); hold Shift then Enter button <br>
+                                            alert("Again!");
+                                        </p>
+                                    </div>
+                                </div>
+                                <p>
+                                    This will execute the "hello" first then when we click "ok" it execute the second
+                                    code which is "Again!"
+                                </p>
+                            </p>
+                    </ul>
+                <h4>Using Chrome Snippets</h4>
+                    <ul>
+                        <p>Another way is to click "sources" on chrome => ">>" => "snippets" => Then we create
+                            new snippets then we name our script with anything with "js" as the extension. Inside 
+                            the file, we can write as many lines as we wish and it'll only run only when we click 
+                            the play button.
+                            <div class="code-parents">
+                                <div class="code">
+                                    <p>
+                                        alert("Hello"); <br>
+                                        alert("world!");
+                                    </p>
+                                </div>
+                            </div>
+                            <p>
+                                This differs from how console works, console is design to test a line of code
+                                but the snippet code is meant to execute the entire code when done writing them.
+                            </p>
+                        </p>
+                    </ul>
+            </ul>
+            <h2>Javascript Valid Keywords</h2>
+            <p>
+                There are some proper keywords that javascript accept, we have to provide these proper keywords
+                for it to function as we want. We can learn some of these keywords simply by visiting documented
+                site like <a href="./https://developer.mozilla.org/en-US/docs/Web/JavaScript">MDN DOCS</a> . Here 
+                we can get acquainted with various valid "js" keyword and we can as well search for them. E.g we 
+                can search "alert" which will bring the details usage of it. By this, we'll be able to see the full 
+                version of the "alert" which is "window.alert".
+            </p>
+            <ul>
+                <h3>Understanding How JavaScript Alert Keyword Execute</h3>
+                    <div class="code-parents">
+                        <div class="code">
+                            <p>
+                                alert("Hello"); 
+                            </p>
+                        </div>
+                    </div>
+                    When we write the "alert" keyword, the browser already know the task is to create a popup and this 
+                    is also refer to as function because it entails a functionality to get the browser to react. The 
+                    word in quote is a message that we want to pop up on screen. Semi-colon is an end of the instructions.
+                    The semi-colon make sure the browser does not confuse a multiline code to a single of instructions.
+                    The parentheses is there to dictate what should be the message which is what that'll be relay in the 
+                    pop-up. Also, the double quote can as well be written as single quote. 
+                <h3>Readability</h3>
+                    <p>
+                        As conventions implies, it is best to not keep any space between the code. So by convention, no
+                        space between the alert and the bracket till the semi-colon. Follow this link to learn more about 
+                        art of writing uniform and universal code for readability.
+                        <a href="./https://github.com/rwaldron/idiomatic.js/">Neat code</a>
+                    </p>
+            </ul>
+            <h2>Data Types</h2>
+            <ul>
+                <h3><li>Understanding Data Types</li></h3>
+                <div class="code-parents">
+                    <div class="code">
+                        <p>
+                            alert("Hello"); 
+                        </p>
+                    </div>
+                </div>
+                <p>
+                    The browser recognize the actual keyword which is the "alert" and which part of the line is to be display.
+                    The thing we add to make the browser know what to display is the quotation(""). So everything the quote 
+                    enclosed get interpreted by the computer as a string so that it get filter out of the code and gets interpreted
+                    as text.
+                </p>
+            </ul>
+            <ul>
+                <h3><li>Types of Data Type</h3>
+                    <ul>
+                        <li>String
+                            <ul>
+                                <p>
+                                    This a way to classify data to tell the computer how the program intends to use the data. In the
+                                    case of the alert("Hello"); We simply want the "Hello" to be display in popup. A string is a text 
+                                    that's not meant to be interpreted as a code or just a string of character.
+                                </p>
+                            </ul>
+                        </li>
+                        <li>Numbers
+                            <ul>
+                                <p>
+                                    As a result of having different symbols from the alphabet we use to code then no special symbol is 
+                                    needed to tell the computer that we have a number. The number can simply be type.
+                                </p>
+                            </ul>
+                        </li>
+                        <li>Boolean
+                            <ul>
+                                <p>
+                                    This simply describe data that is either "True or False"
+                                </p>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <h3><li>Typeof keyword</h3>
+                    <ul>
+                        <p>
+                            This is a keyword that let us know the kind of data type we are using.
+                        </p>
+                        <div class="code-parents">
+                            <div class="code">
+                                <p>
+                                    typeof("Hello"); => "string" <br>
+                                    typeof(332); => "number" <br>
+                                    typeof(true); => "boolean" <br>
+                                </p>
+                            </div>
+                        </div>
+                    </ul>
+                    <li/>
+            </ul>
+            <h2>JavaScript Variables</h2>
+            <p>Variables is highly important in programming, without it our data will be lost. Let's 
+                take for an example by using another "js" keyword which is "prompt".
+
+            </p>
+            <ul>
+                <p>
+                    <div class="code-parents">
+                        <div class="code">
+                            <p>
+                                prompt("What is your name?");
+                            </p>
+                        </div>
+                    </div>
+                </p>
+                <p>
+                    When the code is executed and our name is asked and it was provided, the name will 
+                    be display in the console but we won't be able to retrieve it. Because it's not 
+                    committed to the memory.
+                </p>
+                <h3>Using variables</h3>
+                <p>
+                    Variable store data and it can be use to retrieve any data stored. Example:
+                </p>
+                <ul>
+                    <div class="code-parents">
+                        <div class="code">
+                            var yourName = "Ola";
+                        </div>
+                    </div>
+                        <p>
+                            In the above code, "var" keyword which is shorten for "variable" is used to create 
+                            our variable which we named "yourName". This is then committed to the memory and can
+                            be retrieve for use. In the chrome console, we can just type the "yourName" and it'll 
+                            give us the value it contains which is "ola". "yourName" is like a label on the data
+                            which the data is "ola" in this case. The "var" is a keyword just as "alert and prompt". 
+                            It recognize that we're creating a new data container. And the container is label the 
+                            name that follows the "var", which in this case is "yourName". We then set the variable 
+                            to be equal to a value which in the case is "Ola". Now, every time we refer to "yourName",
+                            the computers knows we're referring to the string "ola". So basically, whenever we start 
+                            with keyword "var", the computer knows is job is to help us create a box which we'll then 
+                            label with any name that comes after the keyword "var". So after the equal signs lies the 
+                            string that we place inside the box. 
+                        </p>
+                            <h4>Assigning variable new value</h4>
+                            <p>
+                                The full meaning of "var" is variable, which means the
+                                data place inside it can be alter. For example;
+                            </p>
+                                <div class="code-parents">
+                                    <div class="code">
+                                        yourName = "Olatunji";
+                                    </div>
+                                </div>
+                            <p>In this case, the computer we simply find the box with label of "yourName" and it simply 
+                                assign it different string we provided. Note: We don't need to include the keyword "var"
+                                again. Var is to be use only when constructing a new box to contain our data. Or when 
+                                constructing a new variable. So when we decide to use the variable or when we decide to 
+                                change the variable, we don't need to use the keyword "var" anymore.
+                            </p>
+                            <h4>Combining Keywords</h4>
+                            <p>
+                                This is act of making our code versatile in functioning by combining different keywords.
+                            </p>
+                            <div class="code-parents">
+                                <div class="code">
+                                  var  yourName = "Olatunji";
+                                  alert(yourName);
+                                </div>
+                            </div>
+                            <p>In this case, "var" will create a variable named "yourName" Then it'll pop-up the value we
+                                stored inside which in this case is "Olatunji". More examples:
+                            </p>
+                            <div class="code-parents">
+                                <div class="code">
+                                  var  tutorName = "Olatunji"; <br>
+                                  var yourName = prompt("What is your name?"); <br>
+                                  alert("My name is " + tutorName + ", welcome to my course " + yourName!)
+                                </div>
+                            </div>
+                            <p>
+                                We simply create a variable named "tutorName" with "Olatunji" as the value, we then create
+                                another variable named "yourName" with the value assign as "prompt" which ask the user for
+                                the value. The prompt will pop up just as alert. The prompt will ask us for name in this case 
+                                and the value we provide will be stored inside the "yourName" variable. The the alert will be
+                                be display as this => My name is Olatunji, welcome to my course ola! (whatever value we provided).
+                            </p>
+                            <div class="code-parents">
+                                <div class="code">
+                                  var  score = 1; <br>
+                                  score = 2; <br>
+                                  score = 5; <br>
+                                  alert("Your latest score is " + score);
+                                </div>
+                            </div>
+                            <p>
+                                This will display as "Your latest score is 5"
+                            </p>
+                            <h4>Exercise</h4>
+                            <p>
+                                Take for example, we have rice in bowl a and we have beans in bowl 
+                                b, think of making bowl b contain rice while bowl a should contain 
+                                beans instead.
+                            </p>
+                            <div class="code-parents">
+                                <div class="code">
+                                    var bowl_a = "rice"; <br>
+                                    var bowl_b = "beans"; <br>
+                                    
+                                    /***********Do not change the code above 👆*******/ <br>
+                                    //Write your code on just three lines : <br>
+
+                                    var bowl_c = bowl_a; <br>
+                                    bowl_a = bowl_b; <br>
+                                    bowl_b = bowl_c; <br>
+                                    <br>
+                                    /***********Do not change the code below 👇*******/ <br>
+                                    <br>
+                                    console.log("bowl_a now contain " + bowl_a); <br>
+                                    console.log("bowl_b is now " + bowl_c); <br>
+                                </div>
+                            </div>
+                            <p>
+                                In this instance, to make the two bowl interchange value, we simply
+                                introduce a new variable  which we called "bowl_c". Then we assign 
+                                it the value of "bowl_a", then we assign "bowl_a" to hold value of 
+                                "bowl_c" then finally, we assigned "bowl_b" the value of "bowl_c". 
+                                We now have rice in bowl_b and beans in bowl_a respectively. 
+                            </p>
+                </ul>
+                <h2>JavaScript Naming Conventions</h2>
+                <p>
+                    This enable us to keep practice of best standard way of putting down codes
+                </p>
+                <h3>Quick Tip</h3>
+                <div class="code-parents">
+                    <div class="code"> 
+                        <p>
+                            To clear console, we simply hold down command + K on mac. On window is control + K. 
+                        </p>
+                    </div>
+                </div>
+                <p>
+                    This clear the console but the content will still be available. So to clear all the stored 
+                    data, we'll do a hard clean.  
+
+                    <div class="code-parents">
+                        <div>
+                            <p>
+                                click and hold reload icon. Then choose Empty cache and Hard reload.
+                            </p>
+                        </div>
+                    </div>
+                    <p>
+                        This completely wipe off the stored data from the memory,
+                    </p>
+                </p>
+                <h3>Rules In Naming Variables</h3>
+                <p>
+                    We can actually name our variable anything that pleases us but it's best to stick with meaningful 
+                    names.
+                </p>
+                <ul>
+                    <li><h4>Meaningful Name</h4>
+                        <ul>
+                            <div class="code-parents">
+                                <div class="code">
+                                    <p>
+                                        var yourName = "Olami";
+                                    </p>
+                                </div>
+                            </div>
+                            <p>
+                                With this, we ensure the name is meaningful and not jargons. This makes retrieving easy.
+                            </p>
+                            <div class="code-parents">
+                                <div class="code">
+                                    <p>
+                                        var myvar = "Olami";
+                                    </p>
+                                </div>
+                            </div>
+                            <p>
+                                This is valid, js allow us to create a variable that contains keyword.
+                            </p>
+
+                            <div class="code-parents">
+                                <div class="code">
+                                    <p>
+                                        var my123 = "ola";
+                                    </p>
+                                </div>
+                            </div>
+                            <p>
+                                This is allowed as it doesn't start with a number
+                            </p>
+
+                            <div class="code-parents">
+                                <div class="code">
+                                    <p>
+                                        var abc123$_ = "ola";
+                                    </p>
+                                </div>
+                            </div>
+                            <p>
+                                Variable name contain alphabet, numbers, dollar sign. No other symbols are valid.
+                            </p>
+
+                            <div class="code-parents">
+                                <div class="code">
+                                    <p>
+                                        var my_name = "ola";
+                                    </p>
+                                </div>
+                            </div>
+                            <p>
+                                This is valid.
+                            </p>
+
+                            <div class="code-parents">
+                                <div class="code">
+                                    <p>
+                                        var userScoreFinal = "ola";
+                                    </p>
+                                </div>
+                            </div>
+                            <p>
+                                This is valid as is widely refers to as "camel casing" First words is not capitalized
+                                and every subsequent one is capitalized.
+                            </p>
+                        </ul>
+                    </li>
+                    <li><h4>Invalid Name</h4>
+                        <ul>
+                            <div class="code-parents">
+                                <div class="code">
+                                    <p>
+                                        var var = "ola";
+                                    </p>
+                                </div>
+                            </div>
+                            <p>
+                                This is not valid way to give a variable a name as we provided a keyword that is recognized 
+                                by "js" to create a var. 
+                            </p>
+
+                            <div class="code-parents">
+                                <div class="code">
+                                    <p>
+                                        var 123 = "ola";
+                                    </p>
+                                </div>
+                            </div>
+                            <p>
+                                Variable name cannot begin with a number.
+                            </p>
+
+                            <div class="code-parents">
+                                <div class="code">
+                                    <p>
+                                        var my name = "ola";
+                                    </p>
+                                </div>
+                            </div>
+                            <p>
+                                Variable name cannot be separated with spaces. Reason is because, js treat the space as if 
+                                we want to write another different bit of code. The first word that comes after var is treated 
+                                as the name of our variable, so in our case now, the variable name is "my" and it does not know 
+                                what to do with the extra name
+                            </p>
+
+                            <div class="code-parents">
+                                <div class="code">
+                                    <p>
+                                        var my-name = "ola";
+                                    </p>
+                                </div>
+                            </div>
+                            <p>
+                                This is not valid.
+                            </p>
+                        </ul>
+                    </li>
+                </ul>
+                <h2>String Concatenation</h2>
+                <p>This is done by combining strings together with plus sign.</p>
+                <ul>
+                    <div class="code-parents">
+                        <div class="code">
+                            <p>
+                                "d" + " " + "c"; => d c
+                            </p>
+                        </div>
+                    </div>
+                    <p>
+                        The above code is simply concatenated into a single string
+                    </p>
+                    <h3>Adding space</h3>
+                    <ul><h4>method 1</h4>
+                        <div class="code-parents">
+                            <div class="code">
+                                <p>
+                                    alert("Hey " + "you");
+                                </p>
+                            </div>
+                        </div>
+                        <p>
+                            This simply display Hey you because we add a extra space after the "hey "
+                        </p>
+                        <h4>method 2</h4>
+                        <div class="code-parents">
+                            <div class="code">
+                                <p>
+                                    alert("Hey" + " " + "you");
+                                </p>
+                            </div>
+                        </div>
+                        <p>
+                            Unlike before, we simply add the space more explicitly by making a string around empty space.
+                            This gives same outcome.
+                        </p>     
+                    </ul>
+                    <h3>More examples</h3>
+                    <div class="code-parents">
+                        <div class="code">
+                            <p>
+                                var message = "Good morning"; <br>
+                                var actions = "today"; <br>
+
+                                alert(message + " there, " + actions + "!");
+                            </p>
+                        </div>
+                    </div>
+                </ul>
+                <h2>JavaScript length</h2>
+                <p>The length feature in "js" allow us to know the number of character in a string. E.g:
+                    "word.length" which give us the number of character in a string. Example:
+                </p>
+                <div class="code-parents">
+                    <div>
+                        <p>
+                            var figure = "one"; <br>
+                            figure.length => 3
+                        </p>
+                    </div>
+                </div>
+                This give us the number of character back which in this case is 3.
+                <ul>
+                    <h3>Tweet counter calculator</h3>
+                    <p>
+                        Here, we'll do tweet calculator that'll limit the number of character we can enter and give us feedback message 
+                        om the number of character we've written and the characters remaining.
+                    </p>
+                    <ul>
+                        <div class="code-parents">
+                            <div class="code">
+                                <p>
+                                    var characterThreshold = 148; <br>
+                                    var message = prompt("Enter your character"); <br>
+                                    var characterAmount = message.length; <br>
+                                    var characterLeft = characterAmount - characterThreshold; <br>
+                                    alert("You have written " + characterAmount  + " characters." + " You have " + characterLeft); <br>
+                                </p>
+                            </div>
+                        </div>
+                        <p>
+                            The above code can be chunk down to smaller line but clarity approach is simply the best. The code is set 
+                            as maximum to 148 characters, then we prompt user to enter message. We then create a container to store the 
+                            amount of message the user enter(characterAmount). Follow by the characterLeft which is simply a calculation 
+                            that subtract the "characterAmount and the characterThreshold". We then give the user back details feedback.
+                        </p>
+                    </ul>
+                </ul>
+                <h2>Slicing and Extracting</h2>
+                <p>We'll be learning about slice feature in this chapter. Slice allow us to slice and dice strings to separate them into 
+                    individual characters. Example: 
+                    <div class="code-parents">
+                        <div class="code">
+                            <p>
+                                var country = "Nigeria"; <br>
+                                country.slice(0, 3)
+                            </p>
+                        </div>
+                    </div> 
+                    <p>
+                        The above code will be reduce to "Nig". The value we provide inside the slice work exactly as range that is; the
+                        second digit provided which is 3 in this case will not be involved. Hence "Nig". Program start counting at position 0. 
+                        So "N" is at position 0. 0 is the lower boundary while the 3 is the upper boundary. We can get the amount of string 
+                        we'll get back simply by subtracting "upper boundary - lower boundary".
+                    </p>
+                </p>
+                <ul>
+                    <h3>Character Counter</h3>
+                    <p>
+                        We'll be creating a counter that'll chop off character that exceed limit set and it'll only alert us only the character 
+                        that is well in the limit set.
+                        <div class="code-parents">
+                            <div class="code"> 
+                                <p>
+                                    var message = prompt("Enter your message here:"); <br>
+                                    alert(message.slice(1, 5));
+                                </p>
+                            </div>
+                        </div>
+                        <p>
+                            With the above code, we've limit the number of message character to enter to a particular limit using slice and in
+                            case, we provide a value between range of 1-5. Which means, any character above provided value will not be shown.
+                            With the conditioned code above, if we provide for example: "Chill"; The outcome will be "hill". So we always get 
+                            back "upper boundary - lower boundary" amount of character. So in this case[5-1], we got back 4 character left
+                        </p>
+                    </p>
+                    <h3>Advance Character Counter</h3>
+                    <p>
+                        Here we'll create a robust counter that'll tell user what they enter and the amount of characters. Which then reduced it 
+                        to the minimum threshold set telling the use the allowed threshold character.
+
+                        <div class="code-parents">
+                            <div class="code"> 
+                                <p>
+                                    var message = prompt("Enter your character"); <br>
+                                    var reducedMessage = message.slice(0, 5); <br>
+                                    var characterAmount = message.length; <br>
+                                    var characterLeft = characterAmount - characterThreshold; <br>
+                                    alert("Here is what you've written " + message + ", which is of size " + characterAmount + " characters " + <br>
+                                        ". Here is the minimal version allowed " + reducedMessage + " which is of size " + reducedMessage.length);
+                                </p>
+                            </div>
+                        </div>
+                        <p>
+                            The above code set does show the overall message enter by user and also tell user the amount of characters enter, it also 
+                            went further to chunk it and show the user what the message is reduced to and the amount of characters now left as the
+                            minimal version allowed.
+                        </p>
+                    </p>
+                </ul>
+                <h2>Changing Casing In Text</h2>
+                <p>
+                    We can change string text to any case in javascript.
+                </p>
+                <div class="code-parents">
+                    <div class="code">
+                        <p>
+                            var name = "ola"; <br>
+                            name = name.toUpperCase(); <br>
+                            name = name.toLowerCase(); <br>
+                        </p>
+                    </div>
+                </div>
+                <p>
+                    This change the string text to capital letter => "OLA". Saving it to the variable "name" makes it callable again without losing the
+                    data. The case can also be in lower case which is what we did in the third line of code. => "ola"
+                </p>
+                <ul>
+                    <h3>Exercise</h3>
+                    <p>
+                        Create a prompt asking user to enter name and give them feedback of "Hey + what they entered.". Make first letter a uppercase and
+                        the rest in lowercase. Combine "length and slice". Don't use special method. Also, try to prevent a bug that might arise which is
+                        when user type in mixture of uppercase and lowercase letters.
+                    </p>
+                    <ul>
+                        <div class="code-parents">
+                            <div class="code">
+                                <p>
+                                    var name = prompt("What is your name?").toLowerCase(); <br>
+                                    nameFirstLetter = name.slice(0, 1); <br>
+                                    nameFirstLetter = nameFirstLetter.toUpperCase(); <br>
+                                    alert("Hello, " + nameFirstLetter + name.slice(1, name.length) + "!");
+                                </p>
+                            </div>
+                        </div>
+                        <p>
+                            At first, we ask user for name then we prevent the bug that might arises from user end when he provided mixture of both upper and
+                            lower case letters instead. So we mandate all strings to be in lower case. In the line two, we used slice method to isolate the
+                            first letter. Then in the third line, we turn it to capital letter. On the fourth line, we then alert the user the feedback. So, if 
+                            user enter "oLA". It'll give back "Ola" as the popup feedback created by the alert keyword.
+                        </p>
+                    </ul>
+                </ul>
+                <h2>Basic Arithmetic & Modulo Operator</h2>
+                <p>
+                    In js, we can add, subtract, divide and so on. For examples:
+                    <div class="code-parents">
+                        <div class="code">
+                            var add = 5 + 2; <br>
+                            var sub = 5 - 2; <br>
+                            var mul = 5 * 3; <br>
+                            var mod = 5 % 3;
+                        </div>
+                    </div>
+                    <p>
+                        The addition gives back "7", subtractions gives "3", multiplications gives 15 while the modulo gives back the remaining number which in this
+                        case is "2". The modulo is the weird one among all of them as it only gives back the remainder of the number we use it on. We use the modulo 
+                        operator to show whether a number is "even or odd". e.g 45 % 2. If we get back 0, the number is "even", if the modulo end up as not equal to
+                        0 then we have "odd" number.
+                    </p>
+                </p>
+                <ul>
+                    <h3>Working With Expressions</h3>
+                    <div class="code-parents">
+                        <div class="code">
+                            <p>
+                                var value = 5  + 6 * 2
+                            </p>
+                        </div>
+                    </div>
+                    <p>
+                        The expression follows the "BODMAS OR PEMDAS" rule. It multiply first then add. The above expression will return "17". This follow a maths rule
+                        that says "We must first multiply and divide before we add or subtract." This works exactly the same way in programming. We can get different value 
+                        we want if we add parentheses to prioritize what should be done first. E.g;
+                        <div class="code-parents">
+                            <div class="code">
+                                <p>
+                                    var value = (5  + 6) * 2
+                                </p>
+                            </div>
+                        </div>
+                        <p>
+                            This first operate on the numbers inside the bracket before multiplication. Which result to "22".
+                        </p>
+                    </p>
+                    <p>
+                        Note; Despite knowing the order of operations, it's always best to add parentheses around numbers to make it distinctively clear. E.g; 
+                        <div class="code-parents">
+                            <div class="code">
+                                <p>
+                                    var value = 5  + (6 * 2);
+                                </p>
+                            </div>
+                            <p>
+                                This makes the order be visible and clear enough.
+                            </p>
+                        </div>
+                    </p>
+                    <h3>Exercise</h3>
+                    <p>
+                        Here, we'll be working with an establish formula of Dog Age To Human Age. Which is; <br> <span>humanAge = (dogAge - 2) * 4 + 21;</span> <br>
+                        So here, we'll create a prompt asking the user to enter their dog age and then we'll give them an alert telling them their dog age
+                        in equivalent of  human age using the above formula.
+
+                        <div class="code-parents">
+                            <div class="code">
+                                <p>
+                                    var dogAge = prompt("What is your dog age?"); <br>
+                                    var humanAge = ((dogAge - 2) * 4) + 21; <br>
+                                    alert("Your dog is " + humanAge + " years old in human years");
+                                </p>
+                            </div>
+                        </div>
+                        <p>
+                            This give back the dog age years in human years. If enter "2", we'll get back 21 years old as dog age in human years. We added extra parentheses
+                            to make our expression clearer.
+                        </p>
+                    </p>
+                </ul>
+                <h2>Increment & Decrement Expressions</h2>
+                <p>
+                    We've seen operators of normal maths. Here, we'll be expose with one that exists only in programming. For example;
+
+                    <div class="code-parents">
+                        <div class="code">
+                            var x = 2; <br>
+                            x = x + 1;
+                        </div>
+                    </div>
+                    <p>
+                        The above will return back "3" as the value "x"
+                    </p>
+                </p>
+                <ul>
+                    <h3>Increment</h3>
+                        <p>
+                            In programming, there is a better way to make an increment work.
+    
+                            <div class="code-parents">
+                                <div class="code">
+                                    var x = 2; <br>
+                                    x ++;
+                                </div>
+                            </div>
+                            <p>
+                                In most programming "x + 1" is same as "x++". The above code result to "3" as the result as well.
+                            </p>
+                        </p>
+    
+                    <h3>Decrement</h3>
+                        <p>
+                            The decrement also works in similar way.
+                        </p>
+                        <div class="code-parents">
+                            <div class="code">
+                                var x = 2; <br>
+                                x --;
+                            </div>
+                        </div>
+                        <p>
+                            "x - 1" is same as "x--". The above code result to "1" as the result as well. So the previous value of "x"
+                            which is 2 will be minus by 1. This is the decrement expressions.
+                        </p>
+                    <h3>Increment To More Than One</h3>
+                        <div class="code-parents">
+                            <div class="code">
+                                var x = 2; <br>
+                                x += 3;
+                            </div>
+                        </div>
+                        <p>
+                            "x + 3" is same as "x += 3". The above code result to "5" as the result. Other operator works same way.
+                        </p>
+                    <h3>Increment By Value Of Variable</h3>
+                    <div class="code-parents">
+                        <div class="code">
+                            var x = 2; <br>
+                            var y = 3;
+                            x += y;
+                        </div>
+                    </div>
+                    <p>
+                        "x += y" is same things as "x + 3". That is the value of previous x which is 2 plus the value of "y" which is 3.
+                        The above result to "5". This also work with others operators.
+                    </p>
+                </ul>
+                <h2>Basic Function</h2>
+                    <p>
+                        Without functions, coding will be a complicated task to do. Functions reduce the workload in coding. For example;
+
+                        <div class="code-parents">
+                            <div class="code">
+                                alert("Stand-up"); <br>
+                                alert("Move Left"); <br>
+                                alert("Move Right"); <br>
+                                alert("Sit Down");
+                            </div>
+                        </div>
+
+                        <p>
+                            The above codes will have to run for every time we need to perform the specific type of task. Which is boring.
+                            Writing every line of the code repeatedly anytime we want to perform such task.
+                        </p>
+                    </p>
+                    <ul>
+                        <h3>Creating And Calling Functions</h3>
+                        <p>
+                            Instead of going the painful way of repeating code, we can simply package the above set of instructions into a
+                            single package that we'll attach a name to. Functions allows us to create a series of instructions, package it
+                            into a block of code by adding curly braces as the boundary. For example;
+
+                            <div class="code-parents">
+                                <div class="code">
+                                   function commandButton() { <br>
+                                    alert("Stand-up"); <br>
+                                    alert("Move Left"); <br>
+                                    alert("Move Right"); <br>
+                                    alert("Sit Down"); <br>
+                                }
+                                </div>
+                            </div>
+
+                            <p>
+                                We've successfully package the instructions under a single package known as functions which we've given a name.
+                                Which the name in this case is "commandButton". We first indicate we're creating a function by first writing the 
+                                keyword function, follow by the name then a set of parentheses. Then follow by curly bracket and the block of codes
+                                that lies between the curly brackets that we want to executed. So next time we want to run the code. We simply call 
+                                the function. For example;
+
+                                <div class="code-parents">
+                                    <div class="code">
+                                        commandButton();
+                                    </div>
+                                </div>
+
+                                <p>
+                                    We simply type the name with the bracket to call the function which save of stress of having to type all the code 
+                                    out again. 
+                                </p>
+                            </p>
+                        </p>
+                        <h3>Functions Vs Variables</h3>
+                        <h4>Variables</h4>
+                        <div class="code-parents">
+                            <div class="code">
+                                var myName = "Olami";
+                            </div>
+                        </div>
+                        <p>
+                            We use the <span>var</span> keyword to create a new box which we labelled as <span>myName</span>. Then we put in a value inside 
+                            the box.
+                        </p>
+                        <h4>Functions</h4>
+                        <div class="code-parents">
+                            <div class="code">
+                               function commandButton() { <br>
+                                alert("Stand-up"); <br>
+                                alert("Move Left"); <br>
+                                alert("Move Right"); <br>
+                                alert("Sit Down"); <br>
+                            }
+                            </div>
+                        </div>
+                        <p>
+                            Function work similarly to variable. We used <span>function</span> keyword to indicate that we're creating a function. Then we
+                            attached a name to it <span>commandButton</span> a name to recognize the block of codes. Then we put in all the instructions we
+                            want to carried out anytime we call the <span>function commandButton</span>
+                        </p>
+
+                        <h3>Creating Vs Calling Functions</h3>
+                        <h4>Creating Function</h4>
+                        <div class="code-parents">
+                            <div class="code">
+                                function commandButton() { <br>
+
+                                }
+                            </div>
+                        </div>
+                        <p>
+                            This is where we involved the <span>function</span> keyword, the name <span>commandButton</span>, the bracket <span>()</span>, and 
+                            curly braces <span>{}</span>. No <span>semi-colon</span> at the end of the curly bracket.
+                        </p>
+                        <h4>Calling Function</h4>
+                        <div class="code-parents">
+                            <div class="code">
+                                commandButton();<br>
+                            </div>
+                        </div>
+                        <p>
+                            All we have to do when we want to call our function is to just write out the function name with the parentheses. Ending with the 
+                            <span>semi-colon</span>. Then computer will look through where the functions was created and it'll carry out the instructions inside 
+                            the curly braces.
+                        </p>
+
+                        <h3>Creating And Calling Functions Inside Chrome</h3>
+                        <p>
+                            Inside chrome, we can simply change the alert keyword to <span>console.log</span> by pressing <span>command + f</span> on mac and 
+                            <span>control + f</span> on window. Then press the <span>A & B</span> icon then the replace all button to replace all the alert keyword 
+                            to console.log. <span>Console.log</span> is meant for the developer usage alone while <span>alert</span> depict an information to the user
+                        </p>
+                    </ul>
+                <h2>Function Practice</h2>
+                <p>
+                    Practicing with <span>karel robot</span>. We'll be using <a href="https://stanford.edu/~cpiech/karel/ide.html">stanford.edu</a> for our function 
+                    practices.
+                </p>
+                <h2>Medium Function <span>[Passing Parameters And Argument To Functions.]</span></h2>
+                <p>
+                    Previously on our introduction to the concept of functions, we discussed about the low type of functions which is such a way of packaging set of
+                    instructions which we can execute at once by using the name of the function. Functions is classify into three different way. The low level one is
+                    the one we already exposed to in the previous lesson. We will be discussing the medium level in this section.
+
+                    <div class="code-parents">
+                        <div class="code">
+                            <p>
+                                function getBooks(books) { <br>
+                                    console.log("leaveHome");
+                                    console.log("moveRight");
+                                    console.log("moveUp");
+                                    console.log("moveRight");
+                                    console.log("Buy " + books + " books."); 
+                                    console.log("moveLeft");
+                                    console.log("moveDown");
+                                    console.log("moveLeft");
+                                    console.log("enterHome"); <br>
+                                } <br>
+                                    
+                                getBooks(2);
+                            </p>
+                        </div>
+                    </div>
+                    <p>
+                        We've simply provided an input for our function unlike Previously that we did'nt input anything in the parentheses. In this instance, we've provide 
+                        an input that will go into this functions which can be use within the series of instructions. We can now pass in data when we call the functions. 
+                        The <span>console.log</span> can additional output the number of book which in this case will be <span>Buy 2 books</span>.
+
+                        <ul>
+                            <h3>Creating And Calling</h3>
+                            <p>
+                                <span>Creating and Calling</span> in this type of <span>function</span> now look like this;
+                            </p>
+
+                            <h4>Creating</h4>
+                            <div class="code-parents">
+                                <div class="code">
+                                    <p>
+                                        var booksCost = 2.5; <br>
+                                        function getBooks(books) { <br>
+                                        var cost = books * booksCost; <br>
+                                    }
+                                    </p>
+                                </div>
+                            </div>
+
+                            <h4>Calling</h4>
+                            <div class="code-parents">
+                                <div class="code">
+                                    <p>
+                                        getBooks(2)
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <p>
+                                So now, depending on the numbers of books we want the robot to purchase. We can now calculate the total cost. Unlike previous function that we left 
+                                the function empty, we now give the function the value of 2 which will be bound to the name <span>books</span> we provided when creating the function. 
+                                So now that we provided 2 as the input, we now have a variable books that's of value 2 and then we can calculate the cost which we set to 
+                                <span>2 * 2.5[books * booksCost]</span> which is 5. So the cost is <span>5 naira</span>. With this, our robot work in more advance way than before. It 
+                                now knows how many books to get and also the cost it'll spend.
+                            </p>
+                        </ul>
+                    </p>
+                </p>
+                <h3>Challenge</h3>
+                <p>
+                    Change the <span>books</span> to <span>money</span>. Then use it to calculates the number of books the robot will buy. For instance, if we gave the robot
+                    <span>6 naira and a book cost 2.5 naira.</span> So the task is to write out the code to calculate how many book the robot will be able to get. So in this case 
+                    <span>6 / 2.5</span> which is <span>2.4</span> round the number down to a whole number because the robot will not be able to buy a book for the remaining cent 
+                    of <span>0.4</span> but it can only get <span>2 books</span> in this case.
+
+                    <div class="code-parents">
+                        <div class="code">
+                            <p>
+                                var booksCost = 2.5 <br>
+                                function getBooks(money) {
+                                    console.log("leaveHome");
+                                    console.log("moveRight");
+                                    console.log("moveUp");
+                                    console.log("moveRight"); <br>
+                                    var numberOfBooks = Math.floor(money / booksCost); <br>
+                                    console.log("Buy " + numberOfBooks + " books.");  <br>
+                                    console.log("moveLeft");
+                                    console.log("moveDown");
+                                    console.log("moveLeft");
+                                    console.log("enterHome"); <br>
+                                    return money % bookCost + " as the change"; <br>
+                                } <br>
+
+                                getBooks(26);             
+                
+                            </p>
+                        </div>
+                    </div>
+                    <p>
+                        So the money will provided when we call the function which is 26 will be pass to the money we provided when we created the function <span>getBooks</span>
+                        Then we divided it by the bookCost. <br>
+                        The above will result in <span>26 / 2.5</span> which is <span>10.4</span> but the <span>Math.floor</span> help us round it down to <span>10</span>
+                        because we can't get <span>0.4 naira</span> book. Also at the end, it return an output of 
+                    </p>
+                </p>
+                <h3>Challenge 2</h3>
+                <p>
+                    Create function that tells how many days, weeks and months we have left if we live until 90years old. It'll take current age as the input and console.logs a
+                    message with our time left in this format. <span>You have x days, y weeks and z months lefts.</span>
+                    where <span>x, y and z</span> are replaced with the actual calculated numbers.
+                    Assume <span>365days in a year, 52 weeks in a year and 12 months in a year.</span>
+                </p>
+                <div class="code-parents">
+                    <div class="code">
+                        <p>
+                            function remainingLifeStats(currentAge) { <br>
+                                var xDays = 365 * (90 - currentAge); <br>
+                                var yWeeks = 52 * (90 - currentAge); <br>
+                                var zMonths = 12 * (90 - currentAge); <br>
+                                console.log("You have " + xDays + " days, " + yWeeks + " weeks, and " + zMonths + " months lefts." ) <br>
+                            } <br>
+                            
+                            remainingLifeStats(89);
+                        </p>
+                    </div>
+                </div>
+                <p>
+                    The above code will return <span>You have 365 days, 52 weeks and 12 months lefts.</span> We create a function that takes in our <span>currentAge</span>.
+                    We then do maths calculation by taking out the maximum age which is 90 from our current age to get the <span>remainingAge</span> So we utilize the remaining
+                    age <span>(90-currentAge)</span> and we multiply days, weeks and months respectively in different line. We get back the remaining days, week and month left.
+                </p>
+                <h2>Complex Function <span>[Outputs & Return Values]</span></h2>
+                <p>
+                    In the last section, we look at function that are able to take in input and use that input inside the function to do some calculation or to use it as part of 
+                    the code. In this part, we'll be expose to more complex way of writing function. This type of function are able to give output. So for example, in the previous 
+                    scenario we took <span>money</span> as an input to the function and then use it to calculate the number of books we can purchase and at the end of the code, we 
+                    use the keyword <span>return</span> to specify that the function in addition to being able to take inputs, it can also give an output. 
+                    Hence <span>return money % bookCost + " as the change</span>. This mean we're getting the remainder of how much we've spent to buy the book.
+
+                    <ul>
+                        <h4>Quick Flashback On How Modulo Work</h4>
+                        <div class="code-parents">
+                            <div class="code">
+                                var sampleOne = 8 % 3; <br>
+                                var sampleTwo = 9 % 6;
+                            </div>
+                        </div>
+                        <p>
+                            The first gives back <span>2</span> because <span>3</span> goes in <span>8</span> just two times with remainder of <span>2</span>. With the modulo in use,
+                            it'll give back only the remainder. While the second example gives back <span>3</span> as the remainder. Because <span>6</span> only goes
+                            in <span>9</span> just one time. So the modulo is only concern about the remainder. Modulo only give back the remainder of division.
+                        </p>
+                    </ul>
+                </p>
+                <h3>Creating Function</h3>
+                <div class="code-parents">
+                    <div class="code">
+                        function getBooks(money) { <br>
+                            return money % 1.5 <br>
+                        }
+                    </div>
+                </div>
+                <p>
+                    This is how we create function in a complex function type. We give in an input which is <span>money</span> when creating our function <span>getBooks</span>. We then 
+                    make it capable of returning an output by using a <span>return</span> keyword. Which we did some calculation. We will then make use of the output when we call the function.
+                </p>
+
+                <h3>Calling Function</h3>
+                <div class="code-parents">
+                    <div class="code">
+                        var change = getBooks(4);
+                        console.log(change);
+                    </div>
+                </div>
+                <p>
+                    This is how we call function in a complex function type. We've now gotten hold of the <span>getBooks</span> function we created and we put it inside a <span>variable</span> that 
+                    we name <span>change.</span> We provided the value of <span>4</span> to the function <span>getBooks</span>. The value will replace the <span>money</span> input we provided when
+                    creating our function. It'll then be use to do the calculation. That is <span>return 4 % 1.5</span>. So the modulo we now be <span>1</span> as the remainder. Which we then store
+                    inside variable <span>change</span>. Then we <span>console.log</span> it to give us the output of <span>1</span>. If we did not have the <span>return 4 % 1.5</span> line when creating 
+                    the function <span>getBooks</span> then calling the function <span>getBooks</span> only execute the function without getting an output back.
+                </p>
+                <h3>Functions Inside Functions</h3>
+                <p>
+                    With this type of function in this section, we're able to use a number of functions inside another functions. For example:
+
+                    <h4>Instead Of This</h4>
+                    <div class="code-parents">
+                        <div class="code">
+                            <p>
+                                var booksCost = 2.5 <br>
+                                function getBooks(money) {
+                                    console.log("leaveHome");
+                                    console.log("moveRight");
+                                    console.log("moveUp");
+                                    console.log("moveRight"); <br>
+                                    var numberOfBooks = Math.floor(money / booksCost); <br>
+                                    console.log("Buy " + numberOfBooks + " books.");  <br>
+                                    console.log("moveLeft");
+                                    console.log("moveDown");
+                                    console.log("moveLeft");
+                                    console.log("enterHome"); <br>
+                                    return money % bookCost + " as the change"; <br>
+                                } <br>
+
+                                getBooks(26);             
+                
+                            </p>
+                        </div>
+                    </div>
+
+                    <h4>Re-written Version</h4>
+                    <div class="code-parents">
+                        <div class="code">
+                            <p>
+                                function getBooks(money, bookCost) {
+                                    console.log("leaveHome");
+                                    console.log("moveRight");
+                                    console.log("moveUp");
+                                    console.log("moveRight"); <br>
+                                    console.log("Buy " + numberOfBooks(money, bookCost) + " books"); <br>
+                                    console.log("moveLeft"); 
+                                    console.log("moveDown");
+                                    console.log("moveLeft");
+                                    console.log("enterHome"); <br>
+                                    return booksChange(money, bookCost); <br>
+                                } <br>
+
+                                <span>Creating Separate Functions</span>
+                                function numberOfBooks(givingCash, costPerBook) { <br>
+                                    var bookQuantity = Math.floor(givingCash / costPerBook); <br>
+                                    return bookQuantity; <br>
+                                } <br>
+
+                                function booksChange(givingCash, costPerBook) { <br>
+                                    var remainingChange = givingCash % costPerBook; <br>
+                                    return remainingChange; <br>
+                                } <br>
+
+                                console.log("Here is your change of " + getBooks(4, 1.5));             
+                            </p>
+                        </div>
+                    </div>
+                    <p>
+                        We've make the code even more robust by adding in function in function with the implementation of 
+                        <span>return</span> keyword. We created two separate functions. The first function is reduce the 
+                        two line of code in our previous codes => <span>var numberOfBooks = Math.floor(money / booksCost);
+                        and console.log("Buy " + numberOfBooks + " books.");</span> Instead we create a different function 
+                        to do the logic which we then <span>return</span> and we then utilize it inside our <span>getBooks</span>
+                        function. We must add the exact two values the <span>getBooks</span> have when using the function we 
+                        created differently inside the <span>getBooks</span>. We are able to use the separate function we 
+                        created <span>numberOfBooks</span> inside <span>getBooks</span> because of the <span>return</span>
+                        keyword we added inside the <span>numberOfBooks</span>. The <span>return</span> keyword make the 
+                        function return an output. So <span>getBooks</span> will now be the activator of the function.
+                    </p>
+                    <p>
+                        For the second function, same things as the first. The difference is that, we <span>console.log</span> 
+                        the first function inside the <span>getBooks</span> while we <span>return</span> the second function 
+                        which is <span>booksChange</span> inside <span>getBooks</span>. This now makes <span>getBooks</span>
+                        to be the activator of the output after we provided the specific amount we want. In this function, we've 
+                        explicitly add two value to make the code even more cleaner.
+                    </p>
+
+                    <h4>How The Code Runs</h4>
+                    <p>
+                        <span>getBooks</span> now have two value => <span>money, bookCost</span>. The code run line by line after 
+                        we called the function <span>getBooks</span>. When it gets to <span>console.log("Buy " + numberOfBooks(money, bookCost) + " books")</span>
+                        it'll look for the separate function of <span>numberOfBooks</span> and it'll trigger the block of code in it which will now be 
+                        <span>2</span> in our case because of how we structure the code inside the <span>numberOfBooks</span> which is 
+                        <span>4 / 1.5</span> which result to <span>2</span> because of the <span>Math.floor</span> we use on them, it reduce 
+                        the equation to <span>2. [it round it down from 2.66 to 2]</span>. The value is fill in as whatever value we provide for the <span>getBooks</span>. 
+                    </p>
+                    <p>
+                        The code keep running till it stumble upon the <span>return booksChange(money, bookCost)</span>. It look for where we created the 
+                        separate function and it trigger it. The <span>getBooks</span> now feeds in the separate function with the value we provided. It'll 
+                        now be <span>4 % 1.5</span> which give us its remainder <span>1</span>. It is able to feed in the amount we provided for the 
+                        <span>getBooks</span> because when we give the amount, the first one will be for the first one which is <span>money</span> while the 
+                        second one will stick with the other one which is <span>bookCost</span>. Which align exactly with what we provided for the two separate
+                        function when using them inside <span>getBooks.</span>
+                    </p>
+                </p>
+                <h2>Challenge</h2>
+                <p>
+                    We'll be creating a <span>bmi calculator</span> using <span>weight / height^2.</span> The function should be able to take in two input and give us result. 
+                    For example: <span>var bmi = bmiCalculator(72, 1.8);</span> So <span>72 / height * height</span> </span> should return <span>22.222</span>. Round the number up.
+                    So final result should be <span>22</span> in this instance.
+                </p>
+                <ul>
+                    <h3>METHOD 1</h3>
+                    <div class="code-parents">
+                        <div class="code">
+                            function bmiCalculator(weight, height) { <br>
+                                var bmi = weight / (Math.pow(height, 2)) <br>
+                                return Math.round(bmi) <br>
+                            } <br>
+                            
+                            var bmi = bmiCalculator(72, 1.8);
+                            console.log(bmi);
+                            
+                        </div>
+                    </div>
+                    <p>
+                        We created <span>bmiCalculator</span> and we give it ability to accept two values when calling it later hence we provided to input which are 
+                        <span>weight, height</span>. We then create a variable named <span>bmi</span> which we stored our calculation inside. Instead of using the 
+                        simple approach by just multiplying <span>height * height</span> to give us the <span>height square</span>. We simply use a method which is 
+                        <span>Math.pow(height, 2)</span>. It accept two value, the first will be what we want to work on, in this case <span>height</span> and the 
+                        second value will be what we want to raise the first to. We then use <span>return</span> keyword so to later use the output when we call the 
+                        function. We use <span>Math.round()</span> on the variable <span>bmi</span> which we stored our calculation inside. <span>Math.round()</span>
+                        simply round up number to the nearest whole number unlike the <span>Math.floor</span> that do round it down. <span>Math.round()</span> approach 
+                        is mathematically correct for example: <span>Math.round(2.5)</span> we simply be <span>3</span>. It will round up number in as much the number
+                        after the decimal is <span>5 upwards.</span>. So in our case. The result will be <span>22</span>
+                    </p>
+
+                    <h3>METHOD 2</h3>
+                    <div class="code-parents">
+                        <div class="code">
+                            function bmiCalculator(weight, height) { <br>
+                                return calcBmi(weight, height); <br>
+                            } <br>
+                            
+                            
+                            function calcBmi(weight, height) { <br>
+                                var height = height * height; <br>
+                                var bmiEquation = Math.round((weight / height)); <br>
+                                return bmiEquation; <br>
+                            } <br>
+                            
+                            var bmi = bmiCalculator(72, 1.8); <br>
+                            console.log(bmi); <br>          
+                        </div>
+                    </div>
+                    <p>
+                        Here, we simply create different function named <span>calcBmi</span>. We then add <span>return</span> keyword at the end of it to make its 
+                        output usable in our <span>bmiCalculator</span> function. We then use it in our main function which is <span>bmiCalculator</span> adding 
+                        <span>return</span> keyword to it. Making it useable inside our main function by passing in the output to our main function. So now, when 
+                        the code get to the line <span>return calcBmi(weight, height)</span> after calling the function <span>bmiCalculator</span>. It'll look for 
+                        where we created the <span>calBmi</span> walkthrough the calculation in it line by line by passing in the value we provided for the 
+                        <span>bmiCalculator</span> to the <span>calBmi</span>. Then we get back <span>22</span>.
+                    </p>
+                </ul>
+                <h2>Random Number In JavaScript</h2>
+                <p>
+                    In this section, we'll be discussing about <span>Math.random()</span>. Unlike the previous function we've talked about, it does not not take in 
+                    input. This function generate a random number. And the random number they got generated is a <span>16 decimal place number</span>. For example;
+                    <span>0.2342985423478235</span> it can be any number between <span>0 and 0.9999999999999999</span> it never reaches one. The random function allows 
+                    us to generate up to a billion random numbers. The <span>Math.random()</span> function returns a <span>floating-point, pseudo-random</span> number
+                    in the range from <span>0 inclusive</span> up to not including <span>1</span>. We can scale it to desired range. Check for more about this function on
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random">MDN DOCS</a>. The reason why it's refers to as 
+                    <span>pseudo</span> is because a computer is essentially a whole bunch of switches, just a giant box of many billions os switches, and depending on
+                    whether the switches is on or off we essentially got <span>1 or 0</span> and it's through these <span>1 and 0</span> it does all the computing work.
+                    But it's not very good at being random. Although, in nature, it's easy to get randomness but in computer, because of is deterministic process, it's 
+                    not easy to get true number. So people have come up with various ways which include mathematical formulas to get this nonrandom computer to generate
+                    what look like random numbers. This video explain it better <a href="https://www.youtube.com/watch?v=GtOt7EBNEwQ">Khan Academy</a>
+                </p>
+
+                    <h3>Dice With Random Function</h3>
+                    <p>Let's demonstrate random number by building a dice game.</p>
+                    <div class="code-parents">
+                        <div class="code">
+                            <p>
+                                var randomNumber = Math.random();
+                                randomNumber = randomNumber * 6;
+                                randomNumber = Math.floor(randomNumber) + 1;
+                                console.log(randomNumber);
+                            </p>
+                        </div>
+                    </div>
+                    <p>
+                        We stored our random number inside <span>randomNumber</span>. For this example, let's assume that the random number we got was <span>0.2342985423478235</span>
+                        In the second line, we turned what was store in the <span>randomNumber</span> by repeating it again but this time without <span>var</span>
+                        keyword at the beginning. We set in new value. That is <span>randomNumber * 6</span> which now look like this <span>0.2342985423478235 * 6</span>
+                        This gives us <span>1.406</span>. We proceed further by assigning new value for <span>randomNumber</span>. We set used <span>Math.floor</span> to 
+                        round down the <span>1.406</span> and we added <span>1</span> to it to make sure we did not get a number that is <span>0</span> because we know that a dice 
+                        number does not include <span>0</span> and by adding the <span>1</span> also makes sure that the number stay at <span>6</span> for maximum. So now, instead 
+                        of generating <span>0, 1, 2, 3, 4, 5</span> it'll make sure it start with <span>1</span> and end with <span>6</span> that is <span>1, 2, 3, 4, 5, 6</span>
+                        will now be the random number that'll be generating.
+                    </p>
+                    
+                    <h3>Challenge</h3>
+                    <p>
+                        Build a love calculator that accept <span>two prompt of two lovers.</span> 
+                        Give them back their love score back. Make it between <span>1 and 
+                        100%.</span> The pop-up will appear as this: <span>"Your love score is 58%".</span>
+                    </p>
+                    <div class="code-parents">
+                        <div class="code">
+                            <p>
+                                prompt("Enter your name: ");
+                                prompt("Enter your name: "); <br>
+                                var loveCalculator = Math.random(); 
+                                loveCalculator = loveCalculator * 100;
+                                loveCalculator = Math.floor(loveCalculator) + 1;
+                                alert("Your love score is " + loveCalculator + "%");
+                            </p>
+                        </div>
+                    </div>
+                    <p>
+                        We created two prompt that pop-up to ask for the lovers name. We then created a variable <span>loveCalculator</span> setting the value  to be of 
+                        <span>random number</span> using javascript function <span>Math.random()</span>. We then set the current value of our <span>loveCalculator</span>
+                        by multiplying the previous value which is the random number stored in it before by <span>100</span>. We then set the value again by using 
+                        <span>Math.floor</span> to round down the number then we add <span>1</span> to the number to make sure our number started from <span>1</span> and 
+                        ended at <span>100</span>. Then we use <span>alert</span> keyword to give the users feedback.
+                    </p>
+                <h2>Control Statement <span>(IF ELSE CONDITIONALS)</span></h2>
+                <p>
+                    In the last section, we created a basic structure of love calculator using randomization. Here, we'll be working on making it more robust by giving the 
+                    love calculator more custom message based on what they got as there love score. We'll do this by checking what they score and responding differently 
+                    base on that score using <span>Conditionals.</span> This allow us to use the keyword <span>IF & ELSE</span> to evaluate a statement. The <span>IF</span>
+                    gets trigger when code condition is met. If not met, the <span>ELSE</span> keyword gets trigger. This is known as <span>Control Flow.</span> We are controlling
+                    the flow of our code depending on the current conditions. Example:
+                </p>
+                <h3>Lucky <span>six</span> game</h3>
+                <p>
+                    Using <span>conditional statement,</span> our task is to create a set of instructions that will only congratulate us if we have
+                    <span>6</span> as our number when run. Otherwise, it'll show us what is left to reach the maximum number which is <span>6.</span>
+                </p>
+                <div class="code-parents">
+                    <div class="code">
+                        var randomNumber = Math.random(); 
+                        randomNumber = randomNumber * 6; 
+                        randomNumber = Math.floor(randomNumber) + 1; <br>
+                        if (randomNumber >= 6) { <br>
+                            console.log("Congrats! you got " + randomNumber); <br>
+                        } <br>
+                        else { <br>
+                            console.log("Try again! you got " + randomNumber + " this time! you are " + (6 - randomNumber) + " luck away!!");
+                        }
+                    </div>
+                </div>
+                <p>
+                    In the above code, we simply simply created a variable named <span>randomNumber.</span> We set the value to a random number which then multiply by 6.
+                    We rounded it down using <span>Math.floor</span> then added with 1. This get rid of decimal number and give us whole number and sets the number from <span>1-6</span>
+                    We then use <span>Control Flow</span> to control the usage of the outcome of each random number we will be getting. So first condition is to check if we get the exact 
+                    number which is <span>6.</span> We will congratulate the user. Anything below <span>6.</span> We set another condition which is telling the user what is 
+                    left to get to the lucky number which is <span>6</span> and we asked them to try again until they get the lucky number.
+                </p>
+                <h3>Intermediate Love Calculator</h3>
+                <p>
+                    Here, we'll be adding more feature to our love calculator to make it more robust. We add custom message to condition the feedback. If the percentage is greater than 
+                    <span>70%.</span> We'll give the couples an encouragement feedback. If otherwise, we'll return just the lover scores.
+                </p>
+                <div class="code-parents">
+                    <div class="code">
+                        prompt("Enter your name: "); <br>
+                        prompt("Enter your name: "); <br>
+                        var loveCalculator = Math.random(); <br>
+                        loveCalculator = loveCalculator * 100; <br>
+                        loveCalculator = Math.floor(loveCalculator) + 1; <br>
+                        if (loveCalculator > 70) { <br>
+                            alert("Your love score is " + loveCalculator +"%" + " this is a perfect match!"); <br>
+                        } <br>
+
+                        else { <br>
+                            alert("Your love score is " + loveCalculator +"%"); <br>
+                        } <br>
+                    </div>
+                </div>
+                <h2>Comparators And Equality</h2>
+                <p>
+                    The <span>(greater than)></span> symbol, <span>lesser than <, </span> and <span>three equal sign symbol ===</span> are known in programming as comparatives because they 
+                    allow us to compare two different values. The <span>===</span> check to see if the left hand side is equal to the right hand side. The <span>!==</span> check whether the left
+                    hand side is not equal to the right hand side. The <span>></span> check if something is greater than something else. <span><</span> lesser than check whether something is 
+                    lesser than something else. Also we have <span><=</span> lesser or equal to and <span>>=</span> greater than or equal to. These comparatives gives our conditionals, like 
+                    <span>IF & ELSE</span> more flexibility.
+                </p>
+                <h3>Difference between <span>==</span> and <span>===</span></h3>
+                <p>
+                    On usage, we might come across people using <span>==</span> instead of <span>===</span>. There is a huge different between the <span>two equals</span> sign and the
+                    <span>three equals sign</span> For example:
+                    <ul>
+                        <h4>Checking for <span>=== Three equal sign</span></h4>
+                        <div class="code-parents">
+                            <div class="code">
+                                var a = 1; <br>
+                                var b = "1"; <br>
+                                if (a <span> === </span>b ) { <br>
+                                    console.log("On point!") <br>
+                                } <br>
+
+                                else { <br>
+                                    console.log("Not true") <br>
+                                }
+                            </div>
+                        </div>
+                        <p>
+                            If we check for the type of data type of each of the variable that is <span>typeof(a)</span> we'll get back <span>number</span> as the data type. The second one 
+                            <span>typeof(b)</span> is <span>string</span>. Using <span>===</span> to check if <span>a</span> is equals to <span>b</span> will simply give us back the condition 
+                            inside our <span>else</span> because <span>1</span> is not equals to <span>"1".</span> That is <span>number</span> is not equal to <span>strings.</span> They are of
+                            two different data types although they are both 1 but <span>===</span> checks for both <span>Equality and Data types.</span> Since the data types are not the same, we'll
+                            get back <span>Not true</span> in this case.
+                        </p>
+
+                        <h4>Checking for <span>== Two equal sign</span></h4>
+                        <div class="code-parents">
+                            <div class="code">
+                                var a = 1; <br>
+                                var b = "1"; <br>
+                                if (a <span> == </span>b ) { <br>
+                                    console.log("On point!") <br>
+                                } <br>
+
+                                else { <br>
+                                    console.log("Not true") <br>
+                                }
+                            </div>
+                        </div>
+                        <p>
+                            If we check for the type of data type of each of the variable that is <span>typeof(a)</span> we'll get back <span>number</span> as the data type. The second one 
+                            <span>typeof(b)</span> is <span>string</span>. Using <span>==</span> to check if <span>a</span> is equals to <span>b</span> will simply give us back the condition 
+                            inside our <span>if</span> because <span>1</span> is  equals to <span>"1".</span> That is <span>number</span> which is <span>1</span> is equal to <span>strings.</span>
+                            which is <span>"1".</span> Although, They are of two different data types. <span>==</span> checks only for <span>Equality</span> Since they are equal to each other the
+                            <span>==</span> triggers <span>"On point".</span> It does not care about <span>data types</span>
+                        </p>
+                    </ul>
+                </p>
+                <h2>Combining Comparators</h2>
+                <p>
+                    In this section, we'll be learning about how we can combine comparatives. We have three basics types of comparatives; <span>Two Ampersands for AND &&.</span> Useful for whether 
+                    condition one is true and condition two is true. Second one is <span>PIPE || OR.</span> This check for if either condition one is true or condition two is true. Finally, the third 
+                    one is <span>NOT !.</span> Which is use to denote the opposite of something.
+                </p>
+                <h3>Advance Love Calculator</h3>
+                <p>Here, we'll be adding even more flexibility to our app by using combining comparators.</p>
+                <div class="code-parents">
+                    <div class="code">
+                        prompt("Enter your name");  <br>
+                        prompt("Enter your name"); <br>
+                        var loveCalculator = Math.random(); <br>
+                        loveCalculator = loveCalculator * 100; <br>
+                        loveCalculator = Math.floor(loveCalculator) + 1; <br>
+                        if (loveCalculator > 70) { <br>
+                            console.log("Your love score is " + loveCalculator + "%. Perfect Match!") <br>
+                        } <br>
+                        if (loveCalculator > 30 && loveCalculator <= 70) { <br>
+                            console.log("Your love score is " + loveCalculator + "%."); <br>
+                        } <br>
+                        if (loveCalculator <= 30) { <br>
+                            console.log("Your love score is " + loveCalculator + "%. You go together like Oil and water"); <br>
+                        } <br>
+                    </div>
+                </div>
+                <p>
+                    In addition to the previous code. We added more if statement and combining comparators. The first <span>IF</span>
+                    checks for whether the love score is above <span>70.</span> The second one checks for two instances. Whether the 
+                    score is greater than <span>30</span> and also <span>70</span> as the maximum. So <span>70</span> score and below.
+                    The third <span>IF</span> check for score that is <span>30</span> and below.
+                </p>
+                <h2>Leap & Not Leap Year Challenge</h2>
+                <p>
+                    In this section, we'll focus on building a logic to tell if a year is a leap year or not. A normal year has <span>365 days</span>, leap years has <span>366 days</span> with an extra 
+                    day in february. The logic here is: <span>A leap year must be divisible by 4.</span> If not divisible by <span>4</span> it already indicate that the particular year is <span>Not a leap
+                    year.</span> If the year is cleanly divisible by <span>4</span> then, the particular year will be eligible for further test. The next step to further test the year  is; <span>After being 
+                    divisible by 4, it must not be divisible by 100.</span> Then it'll be a <span>leap year.</span> If cleanly divisible by <span>100</span> we go to the last option which is 
+                    <span>The year being divisible by 400.</span> If cleanly divisible by <span>400</span> then, it's a leap year, if not divisible by <span>400,</span> it is <span>Not a leap year.</span>
+                    Check <a href="https://www.mathsisfun.com/leap-years.html">leap Years</a> for more information.
+                </p>
+                <div class="code-parents">
+                    <div class="code">
+                        function isLeap(year) { <br>
+                            if (year % 4 == 0) { <br>
+                                if (year % 100 == 0) { <br>
+                        
+                                    if (year % 400 == 0) { <br>
+                                        console.log(year + " is a leap year"); <br>
+                                    } <br>
+                                    else { <br>
+                                    console.log(year + " is not a leap year"); <br>
+                                } <br>
+                                } <br>
+                                else { <br>
+                                    console.log(year + " is a leap year"); <br>
+                                } <br>
+                                
+                            } <br>
+                        
+                            else { <br>
+                                console.log(year + " is Not a leap year") <br>
+                            } <br>
+                        } <br>
+                        
+                        isLeap(1984);
+                    </div>
+                </div>
+                <p>
+                    We created a function that takes in an input <span>isLeap(year)</span> so when we later call the function, we'll have to provide a year for the input. Firstly, <span>We check if the year is
+                    is cleanly divisible by 4. If not, we concluded that the year is not a leap year.</span> Secondly, <span>We check whether the year is cleanly divisible by 100, if not, we concluded that
+                    the year is a leap year. If cleanly divisible by 100 then the third step.</span> Thirdly, <span>Inside the previous if, we test again using another if statement to test if the year is cleanly 
+                    divisible by 400, if true, we say it's a  leap year, if not, we concluded it as Not leap year.</span>
+                </p>
+                <h2>JavaScript Arrays</h2>
+                <p>
+                    In this section, we'll be learning about ways we can simply coding with the help of <span>arrays.</span> Previously, we elongated on usage of variable, but there is some limitation to using 
+                    variables as it brings about repetitive in our code. Previously, we've been exposed to storing data in variables. But we've only been able to store a single piece of data, e.g;
+                    <span>var a = "apple"</span> <span>var b = '123'</span> So we've seen we can store different data type. Now, we'll be expose to how we can store collection of related items into the same 
+                    container or variable. So <span>Array.</span> For example; let's assume we have a single piece of data, <span>an orange</span> instead of storing a single orange into a variable, we can 
+                    also store it in an <span>array.</span> <span>Array</span> is a collection of an item that are related, and they can be stored together into the same container or the same variable. Syntax
+                    look like this <span>var oranges = ["orange1", "orange2", "orange3"]</span>. So we set our variable <span>oranges</span> to equal bunch of data which we then enclose inside square bracket.
+                    Data inside are separated by commas. To retrieve data from this array goes like this; <span>var myOrange = oranges[1].</span> So we use name of the array setting bracket and providing the
+                    position we wanted to retrieve using square bracket. This simply retrieve <span>orange2</span> because computer start counting at <span>0.</span> So same goes for programming. We can also 
+                    get use the <span>length</span> on array. <span>oranges.length;</span> This gives us back <span>3.</span> It counted the number of items inside the array. Also, we can use the function
+                    <span>includes()</span> to find out if an array includes a particular item. For example; <span>oranges.includes("orange2").</span> This we check if <span>orange2</span> is in the array, 
+                    if it's in the array, we get back <span>true.</span> If not, it'll return back <span>false.</span>
+                </p>
+                <h3>Challenge</h3>
+                <p>
+                    Create a prompt that ask for a guess name then check to see if the provided name is on the guest list, if available, show the guest <span>Welcome!</span> If not on the list show the user 
+                    <span>record not found.</span>
+
+                    <div class="code-parents">
+                        <div class="code">
+                            var guestList = ["ola", "kola", "muse", "semiu", "shabaz", "isaac"]; <br>
+                            var guestName = prompt("Provide your name pls? "); <br>
+                            if (guestList.includes(guestName)) { <br>
+                                alert("Welcome!"); <br>
+                            } <br>
+                            else { <br>
+                                alert("Record not found."); <br>
+                            }
+                        </div>
+                    </div>
+                    <p>
+                        We created a variable name <span>guestList</span> which contain an array of names we invited for the seminars. So on entry, we'll ask each visitor to give out their name, which we store 
+                        inside the variable <span>guestName.</span> We then use <span>conditional</span> using the condition by checking the <span>guestList</span> against the provided name the visitor provided
+                        using the function <span>includes.</span> We feedback <span>Welcome!</span> if the name provided is on the <span>guestList.</span> If not, we give back <span>Record not found.</span>
+                    </p>
+                </p>
+                <h2>Adding Elements and Intermediate Array Techniques </h2>
+                <h3>FizzBuzz Game</h3>
+                <p>
+                    In this section, we'll be building a game known as <span>fizzbuzz.</span> Counting number from <span>1,</span> when it get to number that is divisible by 3, it'll replace the <span>3</span> with 
+                    <span>fizz.</span> When we get to number that is divisible by <span>5,</span> it'll instead replace it with <span>buzz.</span> And finally, getting to number that is divisible by both <span>3&5</span>
+                    it'll replace the number with <span>fizzbuzz.</span> Final result looks like this <span>[1,2,"fizz",4,"fizz",7,8,9,10,11,12,13,14,"fizzbuzz".....]</span>
+                </p>
+                <ul>
+                    <h4>Solving the problem</h4>
+                    <p>
+                        To solve this, we'll first figure out a way we can write a code that print out a sequence of numbers starting from <span>1</span> and every single time we run the code the next number gets called 
+                        out.
+
+                        <ul>
+                            <div class="code-parents">
+                                <div class="code">
+                                    var output = [ ]; <br>
+                                    output.push(1,2,3);
+                                </div>
+                            </div>
+                            <p>
+                                We can manually include the number in our <span>output</span> variable but we chose to use <span>push</span> to add the number to our <span>output.</span> Our <span>output</span> now looks 
+                                like this <span>[1,2,3]</span>
+                                <ul>
+                                    <h5>Push</h5>
+                                    <p>
+                                        A <span>push</span> tend to add item to an array and it tends to do that by adding the item to the <span>end</span> of the array. It does not
+                                    </p>
+                                    <h5>Pop</h5>
+                                    <p>
+                                        A <span>pop</span> basically delete item off array. E.g <span>arrayName.pop</span> which takes the last item in the array and it'll remove it completely from the array.
+                                    </p>
+                                </ul>
+                            </p>
+                            <h4>Using Function [<span>To automate adding number to our arrays]</span></h4>
+                            <p>
+                                Instead of writing <span>output.push</span> every single time and adding the next number on in our <span>console,</span> we'll create a function instead in our <span>snippet</span>
+
+                                <ul>
+                                    <div class="code-parents">
+                                        <div class="code">
+                                            var output = [ ]; <br>
+                                            count = 1; <br>
+
+                                            function fizzBuzz() { <br>
+                                                output.push(count); <br>
+                                                count++; <br>
+
+                                                console.log(output); <br>
+                                            }
+                                        </div>
+                                    </div>
+                                    <p>
+                                        We created variable <span>output</span> which we make an empty array, we created another variable which we name <span>count.</span> We set the value as <span>1</span> to 
+                                        make sure our counting start from <span>1.</span> We created function name <span>fizzBuzz</span> within which we added our block of code. We use <span>push</span> to add 
+                                        the <span>count</span> value to our array <span>output.</span> We then make the <span>count</span> an increment that is <span>count++</span> which simply means 
+                                        <span>count = count + 1.</span> So now, we hit the <span>play button</span> in our <span>snippet</span> then we call the function <span>fizzbuzz()</span> inside our
+                                        <span>console.</span> For every time we call our <span>fizzbuzz</span> function, it keep adding new number with an <span>increment</span> each time we run the function.
+                                        Final result looks like this <span>[1,2,3,4,5,6...]</span> <span>command + k</span> to clear <span>console</span>
+                                    </p>
+                                </ul>
+                            </p>
+                            <h4>Final Step</h4>
+                            <p>
+                                Now, instead of counting <span>3,</span> our code should return <span>fizz</span> instead. Instead of <span>5,</span> we should get back <span>buzz.</span> And finally, when we get 
+                                to number that is divisible by both <span>3 & 5,</span> we should get back <span>fizzbuzz.</span>
+
+                                <ul>
+                                    <div class="code-parents">
+                                        <div class="code">
+                                            var output = [ ]; <br>
+                                            var count = 1; <br>
+                                            function fizzBuzz() { <br>
+                                                if (count % 3 === 0 && count % 5 === 0) { <br>
+                                                    output.push("fizzbuzz"); <br>
+                                                } <br>
+    
+                                                else if (count % 3 === 0) { <br>
+                                                    output.push("fizz"); <br>
+                                                } <br>
+    
+                                                else if (count % 5 === 0) { <br>
+                                                    output.push("buzz"); <br>
+                                                } <br>
+    
+                                                else { <br>
+                                                    output.push(count); <br>
+                                                } <br>
+                                            count++; <br>
+    
+                                            console.log(output); <br>
+    
+                                            }
+                                        </div>
+                                    </div>
+                                    <p>
+                                        From the continuation of the previous steps which we created a variable named <span>output</span> which we left it as an empty array simply by setting the value as <span>[ ]</span> empty bracket.
+                                        We then set the <span>count</span> to <span>1.</span> We name the function <span>fizzbuzz.</span> Our order of operation matters a lot which is we first check for both number <span>3&5.</span> We 
+                                        use <span>% modulo operator</span> to make sure we get back the remainder. So for every time we run our function, if the count is divisible by <span>3</span> and the remainder is <span>0</span> and 
+                                        also we add <span>ampersand &&</span> to check for two condition. So if the count is divisible by <span>5</span> and also returns back <span>0.</span> Only when the both condition is met, we will get 
+                                        back <span>fizzbuzz.</span> We follow the first condition with <span>else if.</span> So if count divisible by only <span>3</span> and the remainder left is <span>0,</span> we get <span>fizz.</span>
+                                        same goes for the other <span>else if.</span> So if the count is divisible by 5 and what is left is <span>0,</span> we get back <span>buzz.</span> Otherwise, we use <span>else</span> to continue 
+                                        the counting. <span>count++</span> makes sure the counting keeps increasing. We then console log the <span>output.</span> Then we hit play in our <span>snippet</span> then we call the function 
+                                        <span>fizzBuzz()</span> in our console. So when one condition is met, it'll skip the rest conditions, hence the reason why the other is important.
+                                    </p>
+                                </ul>
+                            </p>
+                            
+                        </ul>
+                    </p>
+                </ul>
+                <h2>Challenge</h2>
+                <p>
+                    In this section, we'll create a game that is base on selecting a <span>random name</span> to buy an item like ticket. So we will do this by creating a function and anytime we call the function, it'll select <span>random</span>
+                    from an array we provided.
+
+                    <ul>
+                        <div class="code-parents">
+                            <div class="code">
+                                function ticketBuyer(names) { <br>
+                                    var names = ["Shabaz", "Mufti", "Jelil", "Sheikh", "Temi"]; <br>
+                                    var numberOfNames = names.length; <br>
+                                    var randomPositionOfNames = Math.floor(Math.random() * numberOfNames); <br>
+
+                                    return names[randomPositionOfNames] + " is going to buy ticket this time!" <br>
+                                } <br>
+                            </div>
+                        </div>
+
+                        <p>
+                            we created a function which we name <span>ticketBuyer,</span> we pass in an input of array named <span>names.</span> the input of array contain the names we want to shuffle to know who we pay anytime we call our function.
+                            We create a variable named <span>numberOfNames</span> we set the value as number of person in our arrays using the <span>length</span> on the array <span>names.</span> We created another variable which we named <span>randomPositionOfNames.</span>
+                            We set the the value by using <span>Math.floor</span> to round down random number we got from <span>Math.random() * numberOfNames.</span> In our case, because the names in our array of <span>names</span> is <span>5</span> hence the length 
+                            is <span>5.</span> Using random number with it will limit the range as <span>0-4</span> because random number start from <span>0</span> and never reaches <span>1.</span> Instead of <span>0.99999999 - 4.9999999</span> we're able to round it down 
+                            with help of <span>Math.floor.</span> We then return the array of <span>names</span> and then using the <span>randomPositionOfNames</span> the <span>randomPositionOfNames</span> now change anytime we call our function.
+                        </p>
+                    </ul>
+                </p>
+                <h2>Control Statement While Loops</h2>
+                <p>
+                    We'll be learning on how we can make computer run our code repeatedly by itself. This is know as <span>loop.</span> The simplest of them is the <span>while loops.</span> It is structure as this 
+
+                    <div class="code-parents">
+                        <div class="code">
+                            while(if something is true goes here) { <br>
+                                Instructions if true. <br>
+                            } 
+                        </div>
+                    </div>
+                    We simply set the instructions inside the parentheses and while the statement is true, then we give it an instruction of code to execute inside the curly braces. Which we run repeatedly until the statement is no longer true. Example; 
+                </p>
+                <div class="code-parents">
+                    <div class="code">
+                        var i = 1; <br>
+                        while(i < 3) { <br>
+                        console.log(i); <br>
+                        i++    <br>
+                        } 
+                    </div>
+                </div>
+                <p>
+                    We first created variable <span>i</span> which we give the value <span>1.</span> We now give a <span>true condition</span> which is <span>i < 3</span> which means <span>1 < 3</span> <span>3 greater than 1.</span> So we log the new value of <span>i</span>
+                    on each loop and we do that by adding the value <span>i++</span> explicitly <span>i = i + i</span> till it reach a situation where by the statement <span>i < 3</span> is no longer true, then it breaks and gives us final result which looks like this;
+                    <span>1, 2.</span> So it won't get to <span>3</span> because of the <span>inequality sign</span> which mandate the number to be lesser than <span>3.</span> If the statement were to be <span>i <= 3</span> it'll definitely reach <span>3</span> because 
+                    the signs now signify that the number can be either be <span>greater than or equals to 3.</span>
+                </p>
+                <h3><span>While Loops</span> With <span>fizzbuzz game</span></h3>
+                <p>
+                    We'll be modifying our <span>fizzbuzz</span> for it to run automatically.
+
+                    <div class="code-parents">
+                        <div class="code">
+                            var output = [ ]; <br>
+                            var count = 1;  <br>
+                            function fizzBuzz() { <br>
+                                while (count <= 100) { <br>
+                                    if(count % 3 === 0 && count % 5 === 0) { <br>
+                                    output.push("fizzbuzz"); <br>
+                                    } <br>
+
+                                    else if(count % 3 === 0) { <br>
+                                        output.push("fizz"); <br>
+                                    } <br>
+                                
+                                    else if(count % 5 === 0) { <br>
+                                        output.push("buzz"); <br>
+                                    } <br>
+
+                                    else { <br>
+                                        output.push(count); <br>
+                                    } <br>
+                                    count++ <br>
+                                } <br>
+                            console.log(output); <br>
+                                
+                            }
+                        </div>
+                    </div>
+                </p>
+                <p>
+                    With the above code, all codes works exactly as before but the only difference now is that the code will be executed automatically Without us calling the function repeatedly in our console.
+                    Just one call and we'll get the full output with the help of the <span>while loops.</span> Giving it condition that makes it goes from <span>1-100</span>. So <span>count <= 100</span> means 
+                    in as much the <span>count</span> is less or equal to 100. It should keeps giving us output till it is no longer true.  So it is when the block of code that is inside <span>while loops</span>
+                    is no longer true, only then it'll proceed to give us back our entire full array.
+                </p>
+                <p>
+                    While loops can tends to be a dangerous approach because it'll continue to run <span>infinitely</span> until the statement of code inside it turns <span>false.</span> So if we made a mistake like 
+                    not including the increment code <span>count++</span> which means the <span>count</span> stays as <span>1</span> and never reach <span>100</span> then our loops keeps running till our tab freeze.
+                </p>
+                <h3>Challenge</h3>
+                <p>
+                    We'll replicate a lyrics of song with code. Popularly known as <span>99 bottles of beer.</span> Visit <a href="https://www.99-bottles-of-beer.net/lyrics.html">99-bottles</a> for full lyrics. Glimpse 
+                    of how it's being structure is <span>99 bottles of beer on the wall, 99 bottles of beer.Take one down and pass it around, 98 bottles of beer on the wall.98 bottles of beer on the wall, 98 bottles of beer.
+                    Take one down and pass it around, 97 bottles of beer on the wall.</span> Till it run down to <span>0 bottle.</span> The task is to replicate the whole lyrics, making it automated with code using <span>while
+                    loops.</span> And making sure the grammatical context of it is accurate. For example; <span>2 bottles of beer on the wall, 2 bottles of beer.Take one down and pass it around, 1 bottle of beer on the wall.
+                    <span>1</span> bottle of beer on the wall, <span>1</span> bottle of beer.Take one down and pass it around, no more bottles of beer on the wall.No more bottles of beer on the wall, no more bottles of beer.Go to the store and buy some
+                    more, 99 bottles of beer on the wall.</span> Notice that as the bottle get to <span>1,</span> it turns from <span>bottles</span> to <span>bottles.</span> Thing of a way to make the bottle plural if more than
+                    one and make it singular is <span>1.</span> And when the bottle remain nothing, don't involve <span>0,</span> instead return <span>no more bottles..</span> As it is in the lyrics link.
+                </p>
+                <div class="code-parents">
+                    <div  class="code">
+                        var bottleTotal = 99;  <br>
+
+                        function bottleWordGrammar(bottleRemaining) { <br>
+                            return bottleRemaining === 1? "bottle" : "bottles"; <br>
+                        } <br>
+
+                        function bottleBeerLeft(bottleLeft) { <br>
+                            return bottleLeft === 0? "no more" : bottleTotal + " " + bottleWordGrammar(bottleTotal); <br>
+                        } <br>
+
+                        while (bottleTotal > 0) { <br>
+                            
+                            console.log(bottleBeerLeft(bottleTotal) + " " + " of beer on the wall, " + bottleBeerLeft(bottleTotal) + " " + " of beer."); <br>
+                            bottleTotal--; <br>
+                            console.log("Take one down and pass it around, " + bottleBeerLeft(bottleTotal) + " " + bottleWordGrammar(bottleTotal)  + " of beer.") <br>
+                        } <br>
+
+                        console.log(bottleBeerLeft(bottleTotal) + " " + bottleWordGrammar(bottleTotal) + " of beer on the wall, " + bottleBeerLeft(bottleTotal) + " " + bottleWordGrammar(bottleTotal) + " of beer"); <br>
+                        var bottleTotal = 99; <br>
+                        console.log("Go to the store and buy some more, " + bottleTotal + " " + bottleWordGrammar(bottleTotal) + " of beer on the wall."); <br>
+                    </div>
+                </div>
+                <p>
+                    First, we created a variable named <span>bottleTotal.</span> It stored the total value of available bottles of beer which is <span>99.</span> Since we can either have either more than one bottle remaining or just one bottle, we created a function to 
+                    tackle the grammatical error that might occur as a result. So we name it <span>bottleWordGrammar.</span> Which we give it an input named <span>bottleRemaining</span> which gives us the privilege to give our function an input when we call it later. So
+                    this will return singular form of bottle if we have  just <span>1 bottle left,</span> and it'll return plural forms of bottle if we have <span>more than one bottles left.</span> We use <span>ternary operator</span> to implement this in just one line 
+                    instead of going more explicit by using <span>if and else</span> explicitly. The question mark <span>?</span> indicate that if the statement is true, it should return <span>singular</span> forms of bottle. The <span>:</span> indicate <span>else</span>
+                    which returns the plural form of bottle. <br>
+                    We created another function that we named <span>bottleBeerLeft.</span> This helps us return a unique reply when our bottles run than to <span>0.</span> So we instead return <span>no more</span> as reply for when we have no bottles left. And for the 
+                    <span>:</span> which is the <span>else</span> we simply return value of <span>bottleTotal</span> and we use the <span>bottleWordGrammar</span> to implement the usage of grammar. The <span>bottleLeft</span> input makes it the function a capable of taking
+                    in an output when we later call it. <br>
+                    We then proceed to create <span>while loops</span> giving it an expression <span>bottleTotal > 0</span> which simply means that, so far the <span>bottleTotal</span> is greater than <span>0,</span> keep running the block of code we'll provide within the loops.
+                    We provide message to display by using our functions and passing in the <span>bottleTotal</span> as an input. Then further message to clarify more updates on what is going on. We then use <span>bottleTotal--</span> after the first message which reduces number 
+                    of bottles after which we provided an updated messages to display after bottle is reduced. So after the loops is no longer true, we provided further messages on what should be done next after which bottle of beer is finished.
+                </p>
+                <h2>For Loops</h2>
+                <p>
+                    <span>For loops</span> works similarly to a <span>while loop,</span> but instead of testing a condition, we're specifying the number of times that we want the loops to run. Here is how the syntax looks like.
+
+                    <div class="code-parents">
+                        <div class="code">
+                            for (var i = 0; i < 5; i++) { <br>
+                                Work on something <br>
+                            }
+                        </div>
+                    </div>
+                    <p>
+                        We have a keyword <span>for</span> with set of parentheses. Inside the parentheses we first define a starting point <span>var i = 0;</span> So in this instance, we started at <span>0.</span> We then define 
+                        the end point <span>i < 5;</span> So the code will keeps running in as much <span>i value</span> is under <span>5.</span> The last is the change implementation <span>i++.</span> This basically impose an increment 
+                        on the variable <span>i.</span> This will give output of <span>0,1,2,3 and 4.</span>
+                    </p>
+                    <ul>
+                        <h3>Difference between For Loops & While Loops</h3>
+                        <h4><span>While Loops</span></h4>
+                        <div class="code-parents">
+                            <div class="code">
+                                var i = 0; <br>
+                                while(i < 5) { <br>
+                                    console.log(i); <br>
+                                    i++ <br>
+                                }
+                            </div>
+                        </div>
+
+                        <div class="code-parents">
+                            <div class="code">
+                                for(var i = 0; i < 5; i++) { <br>
+                                    console.log(i); <br>
+                                }
+                            </div>
+                        </div>
+
+                        <p>
+                            The difference between the two is that, in the <span>var i</span> creation now goes inside <span>for loops</span> indicating starting point. Other notable difference is that <br>
+                            For <span>While loops</span> we have to include the code that change <span>i</span> inside the <span>while loops.</span> But with the <span>for loops,</span> we've integrated it
+                            inside the declaration for the <span>for loops.</span> So at the creation of the <span>for loops,</span> we've define the <span>starting point,</span> the 
+                            <span>ending point</span> and <span>how much "i" is going to change.</span> <br>
+                            <span>While loops</span> checks for a state, so it is while something is true. So it repeatedly run an instructions while the program is in a certain state. For the <br>
+                            <span>For loops,</span> we <span>iterate.</span> That is, we run a piece of code many times an we use the <span>for loops</span> to impose the number of times.
+                        </p>
+                    </ul>
+                </p>
+                <h3>How for loops run</h3>
+                <div class="code-parents">
+                    <div class="code">
+                        for (var i = 1; i < 2; i++) { <br>
+                            console.log(i); <br>
+                        }
+                    </div>
+                </div>
+                <p>
+                    So here, we started with variable with value <span>1.</span>And we'll end while <span>i is less than 5</span> and we're incrementing by <span>1</span> each time. And inside the loop, we simply 
+                    log the value of <span>i.</span> The computer first run the code <span>var i = 1</span> and then create the variable <span>i.</span> It then set the value to <span>1</span> as we've provided at
+                    the start. <br>
+                    Next step is it reaches the second part of the <span>for loop</span> where it checks to see whether if the current value of <span>i is less than 2</span>  and <span>1 is definitely less than 2</span>
+                    So it proceed to run the code inside the <span>for loops.</span> So the code inside the <span>curly braces { }.</span> And in our case, it log the value of <span>i</span> which is currently at <span>1.</span>
+                    Once getting to end of the <span>for loops</span> which is at the last <span>}.</span> This is the point where the third value in that <span>for loops</span> which is <span>i++</span> is carried out. 
+                    So in our case, <span>i</span> is incremented by <span>1.</span> So i is now equal to <span>2.</span> Now the code looks back to run the loop again. And the first thing it now check is to check whether the 
+                    condition is true that is <span>i < 2</span> As we know that <span>2 is not less than 2.</span> So the condition to keeps running are not met and the code exit the loop.
+                </p>
+
+                <h3>For Loops With FizzBuzz Game</h3>
+                <div class="code-parents">
+                    <div class="code">
+                        var output = [ ]; <br>
+                        for (var count = 1; count <= 100; count++) { <br>
+                            if (count % 3 === 0 & count % 5 === 0) { <br>
+                                output.push("fizzbuzz") <br>
+                            } <br>
+
+                            else if (count % 3 === 0) { <br>
+                                output.push("fizz"); <br>
+                            } <br>
+
+                            else if (count % 5 === 0) { <br>
+                                output.push("buzz"); <br>
+                            } <br>
+
+                            else { <br>
+                                output.push(count) <br>
+                            } <br>
+
+                        } <br>
+
+                        console.log(output);
+                    </div>
+                </div>
+                <p>
+                    The code explanation is the same as before, the only changes is the implementation of the <span>for loops.</span> This implementation is more flexible as the condition can even goes in 
+                    other direction by counting down from <span>100 to 1.</span> And we can also makes the count increment be of <span>2.</span>
+                </p>
+                <h2>Fibonacci Sequence Generator</h2>
+                <p>
+                    In this section, we'll be creating a fibonacci sequence generator. The techniques behind the sequence goes like this. We'll add <span>subsequent number</span> together to get the next 
+                    number. There are lot of version as some start there sequence with <span>1, 2</span> and so on, but we'll start our own with <span>0 and 1</span> which looks like this;
+                    <span>0, 1, 1, 2, 3, 5, 8, 13, 21.....</span>
+                </p>
+                <div class="code-parents">
+                    <div class="code">
+                        function fibonacciSequence(n) { <br>
+                            var output = [ ]; <br>
+                            if (n === 1) { <br>
+                                output = [0]; <br>
+                            } <br>
+                            else if (n === 2) { <br>
+                                output = [0, 1]; <br>
+                            } <br>
+                            else { <br>
+                                output = [0, 1]; <br>
+                                for(var i = 2; i < n; i++) { <br>
+                                    output.push(output[output.length - 2] + output[output.length - 1]); <br>
+                                } <br>
+                            } <br>
+
+                            return output; <br>
+                            
+                        } <br>
+                        
+                        fibonacciSequence(5);
+                                                
+                    </div>
+                </div>
+
+                <p>
+                    We created a function name <span>fibonacciSequence</span> which take in a <span>parameter n</span> to make it dynamic to put in any number when calling the function. We created variable named 
+                    <span>output</span> to store the number as an item in a list. Since we want our fibonacci sequence to start at <span>0 and 1.</span> We set in conditional statement. <br> So the <span>first</span> one says if the 
+                    <span>Argument</span> which will be the value that'll replace the <span>parameter</span> that we pass in to our function. So if the number will pass when calling our function is <span>1.</span>
+                    We set the <span>output</span> variable now to <span>[0].</span> We can also use <span>push</span> to add the number to our <span>output.</span>  <br>
+                    The <span>second</span> condition was set to if the number pass is <span>2</span> then the <span>output</span> is now set to <span>[0, 1].</span> <br>
+                    So <span>thirdly,</span> in rest situation that the <span>argument</span> pass in to our function is higher than both <span>0 and 1,</span> we provided the <span>output</span> value as the value 
+                    of the immediate one which is <span>[0,1]</span> we then <span>iterate</span> using our <span>for loops</span> which we save of stress of having to manually keep giving different <span>output</span>
+                    writing countless <span>if & else</span> statement. So we use <span>for loops</span> to <span>iterate</span> on all the condition that may be provided when calling the function. So we start by setting the value of our 
+                    <span>i</span> variable to <span>2</span> because we already have <span>2 items</span> in our <span>output</span> list. So what is require now is to adding subsequent number onward. We then set condition that in as much 
+                    <span>n</span> which will be replace by the <span>argument</span> that is the number to be pass when calling the function. So under the condition where <span>i</span> which will be the current number of items in our list 
+                    is less than giving <span>argument</span> we then set <span>i++</span> which means we want <span>i</span> to be increasing till the number enter is greater than <span>i</span> So for example if we call our function like this 
+                    <span>fibonacciSequence(3);</span> <span>for loop</span> we make sure the <span>output</span> items must be <span>3.</span> So this will return <span>[0, 1, 1].</span> We then set what should be put inside the <span>output</span>
+                    variable. So we derive position of <span>output</span> using <span>output[output.length]</span> this gives us dynamic current position of the last items inside <span>output.</span> We know that <span>position</span> start counts 
+                    from <span>0</span> unlike length which start from <span>1.</span> Since we want the item <span>position,</span> we then subtract <span>2</span> from the current length of our item, this will give us dynamic <span>position</span>
+                    same as when we subtract <span>1</span> So they both will keep transiting depending on number we pass. So if we pass in <span>3</span> for example. Since <span>i < n</span> in our loop, it'll be <span>output[2-2].</span> So item
+                    at <span>position 0</span> and <span>output[2-1]</span>item at <span>position 1.</span> So we add them together. <span>output[2-2]+output[2-1]</span> which result <span>output[0]+output[1].</span> Which means to get an output that 
+                    will be of <span>length 3</span> which means <span>3 items</span> in our <span>output</span> we'll add item at <span>position 0 and 1</span> which the both items will give us the third item on the list. So we'll get back <span>[0,1,1].</span>
+                    Lastly, we return our <span>output list array</span> after all the <span>conditional.</span> Then we callout our function <span>fibonacciSequence(5)</span> In this case we passed in <span>5.</span> Since it is greater than both <span>0 and 1.</span>
+                    It'll bounce straight inside our <span>else</span> So we gave it the <span>output</span> default value to start with, which is <span>0 and 1.</span> We then use <span>for loops</span> to iterate. In as much <span>i < 5</span> we will keep 
+                    adding subsequent number till the statement is no more true. So what will be put inside our list will now look like this => since <span>i = 2</span> and <span>i < 5</span> So in background, <span>for loops</span> work on <span>3</span> since 
+                    two value has been provide already which is <span>0,1</span>  it then check again with <span>4</span> and it breaks at <span>4</span> because the <span>i < 5</span> condition must be met. So the number must not be up to <span>5.</span>
+                    What will now be the push to our <span>output list</span> will be structure as this => <span>output[4-2]+output[4-1]</span> which gives <span>output[2]+output[3]</span> it'll now look inside the last items it has already work on, in this 
+                    case the recent one is <span>[0,1,1,2]</span> So <span>position 2 + position 3</span> which the number presently at this position is <span>1 and 2</span> respectively. Adding them together gives back <span>3.</span> So the number to be added 
+                    at the end of our list will be <span>3.</span> Our updated list value now look like this <span>[0, 1, 1, 2, 3].</span> So <span>five items</span>
+                </p>
+                <hr>
+                <section>
+                    <h2 class="dom-section">JAVASCRIPT DOM</h2>
+                    <p>
+                        In this section we'll now be learning on how we will be able to implement all what we've learn about javascript in a webpage. So inside our <span>vscode</span> we'll create a new folder and give it a name, then we create <span>3 files</span>
+                        inside. <span>index.html, style.css and index.js.</span> <br>
+                        <span>JavaScript</span> follows the same way as <span>Css</span> when adding the files to our document. We can add js through <span>Inline, internal and external.</span> 
+                    </p>
+                    <ul>
+                        <li>
+                            <h3>Inline Js</h3>
+                            <p>Here is how <span>inline Js</span> looks like inside <span>index.html</span></p>
+                        <ul>
+                            <div class="code-parents">
+                                <div class="code">
+                                    &lt!DOCTYPE html> <br>
+                                    &lt;html lang="en"> <br>
+                                    &lt;head> <br>
+                                        &lt;meta charset="UTF-8"> <br>
+                                        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"> <br>
+                                        &lt;link rel="stylesheet" href="./style.css"> <br>
+                                        &lt;title>Document</title> <br>
+                                    &lt/head> <br>
+                                    &lt;body onload="alert('Hey!');"> <br>
+                                        &lt;h1>Hello&gt/h1> <br>
+                                    &lt/body> <br>
+                                    &lt/html> <br>
+                                </div>
+                            </div>
+                            <p>
+                                Now, if you observe the <span>body tag element</span> you'll see a property named <span>onload.</span> This is one of <span>Js</span> property which means when the body of our website is loaded up, then whatever <span>Js</span> we place
+                                inside the quotation mark will be executed. In this case, we use <span>alert</span> keyword and provided what is it we want to popup which in this case is <span>Hey!</span> Notice how we use double quote <span>""</span> and single quote 
+                                <span>''</span> we simply did this to distinguish string of text from actual Js keyword. Then we concluded it with <span>;</span> <br>
+                                Just as the <span>Css Inline,</span> also, <span>Js Inline</span> is not modular, and it is tough to debug.
+                            </p>
+                        </ul>
+                        </li>
+
+                        <li>
+                            <h3>Internal Js</h3>
+                            <p>Here is how <span>internal Js</span> looks like inside <span>index.html</span></p>
+                        <ul>
+                            <div class="code-parents">
+                                <div class="code">
+                                    &lt!DOCTYPE html> <br>
+                                    &lt;html lang="en"> <br>
+                                    &lt;head> <br>
+                                        &lt;meta charset="UTF-8"> <br>
+                                        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"> <br>
+                                        &lt;link rel="stylesheet" href="./style.css"> <br>
+                                        &lt;title>Document&lt;/title> <br>
+                                    &lt/head> <br>
+                                    &lt;body> <br>
+                                        &lt;h1>Hello&gt/h1> <br>
+                                    &lt;script type="text/javascript"> <br> alert("You") <br> &lt;/script> <br>
+                                    &lt/body> <br>
+                                    &lt/html> <br>
+                                </div>
+                            </div>
+                            <p>
+                                In this type, we simply use <span>script tag</span> and everything between it can be a <span>Js.</span> So now, we don't need to contain our keyword inside quotation mark here, just the string. This does exactly the same thing. The 
+                                browser reads through the web page line by line and once it hit the <span>script tag,</span> it'll execute the <span>Js</span> that is placed inside.
+                            </p>
+                        </ul>
+                        </li>
+
+                        <li>
+                            <h3>External Js</h3>
+                            <p>Here is how <span>External Js</span> looks like inside <span>index.html</span></p>
+                        <ul>
+                            <div class="code-parents">
+                                <div class="code">
+                                    &lt!DOCTYPE html> <br>
+                                    &lt;html lang="en"> <br>
+                                    &lt;head> <br>
+                                        &lt;meta charset="UTF-8"> <br>
+                                        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"> <br>
+                                        &lt;link rel="stylesheet" href="./style.css"> <br>
+                                        &lt;title>Document&lt;/title> <br>
+                                    &lt/head> <br>
+                                    &lt;body> <br>
+                                        &lt;h1>Hello&gt/h1> <br>
+                                        <script src="./index.js" charset="utf-8"></script>
+                                    &lt/body> <br>
+                                    &lt/html> <br>
+                                </div>
+                            </div>
+                            <p>
+                                In this type, we simply add a separate file named <span>index.js</span> inside <span>script tag</span> by using <span>src</span> which means source as attribute to 
+                                locate the file. The <span>charset="utf-8"</span> tag tells the browser to interpret the characters on the webpage using the <span>UTF-8 encoding.</span>
+                            </p>
+                            
+                            <ul>
+                                <h3>Index.js</h3>
+                                <p>
+                                    Here is how the <span>index.js</span> file will look like.
+                                </p>
+                                <div class="code-parents">
+                                    <div class="code">
+                                            alert("Hello");
+                                    </div>
+                                </div>
+                                <p>
+                                    So now, we've created the external file that the <span>script tag</span> inside the <span>index.html</span> will target. We simply give the file the keyword and
+                                    the string it will display. This does same thing when the web page gets loaded up, we get an alert of <span>Hello</span>
+                                </p>
+                            </ul>
+                            <h4>Notes</h4>
+                            <p>
+                                The position inside the html document where we place the <span>script tag</span> matters a lot. With <span>Css tag</span> we place it inside the <span>head element tag</span> so that it get loaded first before any of the content.
+                                of our website which tends to be inside the <span>body tag.</span> This is highly necessary because, if we place the <span>Css Link Tag</span> inside the <span>body tag</span> instead, what happens as a result is that, our website 
+                                will behave weirdly because it do read the code line by line from the top, so will have to get to the <span>body tag</span> before it execute our <span>Css code</span> which is not what we want. <br>
+                                With <span>Js,</span> it is quite opposite because if inside our script we tried to change an html element that does not yet exist, then it will fail. So for example, inside our <span>index.js</span> we write a code to change html 
+                                element <span>document.querySelector("h1").innerHtml = "Good Bye";</span> This simply means, we want our code to look inside our document and the look for selector named <span>h1</span> and when it finds the element, we then change 
+                                the <span>innerHtml</span> which is the text that is inside the <span>h1.</span> Currently, it's set to <span>Hello</span> and we want to change it to <span>Good Bye.</span> <br>
+                                Now, if the script we want to change the <span>h1</span> is below the <span>h1</span> that is after the <span>h1</span> has been created, then the code will work as it'll find the <span>innerHtml</span> also known as the <span>text.</span>
+                                and change it as require. But if we move the script into the <span>head tag</span> section, then it'll fail because running from top to bottom will prevent it from seeing the <span>h1 element</span> we wanted to change. So it will fail before 
+                                reaching where our <span>h1</span> is. <br>
+                                So best practice is always to bind the <span>script tag</span> inside the <span>body tag.</span> Added benefit of this is that, it add runtime speed to our website because it require more time to run the script, so placing it at the end
+                                makes our website loaded up fast and by the time it get to the <span>Js</span> zone, <span>Js</span> would be well ready.
+                            </p>
+                        </ul>
+                        </li>
+                    </ul>
+                </section>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>
+
+
